@@ -1,0 +1,10 @@
+build/
+managed_components/
+dependencies.lock
+sdkconfig
+/sdkconfig.old
+.pio/
+.espressif/
+*.bin
+*.elf
+*.map

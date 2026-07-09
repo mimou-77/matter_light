@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "~/esp-idf/components/**",
+                "~/esp-matter/components/**",
+                "~/esp-matter/examples/common/utils/**",
+                "~/esp-matter/connectedhomeip/connectedhomeip/src/**"
+
+
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/clang-18",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "linux-clang-x64"
+        }
+    ],
+    "version": 4
+}
