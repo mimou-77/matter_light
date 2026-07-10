@@ -52,11 +52,11 @@ void led_init(uint8_t pin)
 
 void blink_led_for_duration_ms(uint8_t pin, uint16_t duration_ms)
 {
-    led_set(pin, 1);
+    led_set(pin, LED_ON_LVL);
 
     vTaskDelay(duration_ms/portTICK_PERIOD_MS);
 
-    led_set(pin, 0);
+    led_set(pin, LED_OFF_LVL);
 }
 
 
@@ -85,7 +85,7 @@ void led_start_blink(uint8_t pin, uint32_t interval_ms)
     };
     esp_timer_create(&blink_timer_args, &blink_timer_handle);
 
-    blink_lvl = 1;
+    blink_lvl = LED_ON_LVL;
     led_set(pin, blink_lvl); // turn on immediately, then toggle every interval_ms
     esp_timer_start_periodic(blink_timer_handle, (uint64_t)interval_ms * 1000);
 }
@@ -103,5 +103,5 @@ void led_stop_blink(uint8_t pin)
     esp_timer_delete(blink_timer_handle);
     blink_timer_handle = NULL;
 
-    led_set(pin, 0);
+    led_set(pin, LED_OFF_LVL);
 }

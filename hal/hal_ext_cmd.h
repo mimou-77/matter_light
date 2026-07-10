@@ -10,6 +10,17 @@ extern "C" {
 
 
 
+
+/**
+ * @brief external cmd = a transistor  
+ * 
+ * 
+ */
+
+
+
+
+
 #include "driver/gpio.h"
 
 

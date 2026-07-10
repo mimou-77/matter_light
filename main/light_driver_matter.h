@@ -59,14 +59,30 @@ typedef struct
 } btn_ctx_t;
 
 
+typedef enum
+{
+    EXT_CMD_ARMED = 0,   // line at rest : the next edge opens a pending actuation
+    EXT_CMD_PENDING,     // 1 edge seen : fires on a 2nd edge or a non-idle level after
+                         // EXT_CMD_CONFIRM_MS ; discarded if the line is back at idle (glitch)
+    EXT_CMD_SETTLING,    // actuation fired : everything is absorbed until the line has been quiet
+                         // for EXT_CMD_SETTLE_MS and is back at its idle level
+
+} ext_cmd_state_t;
+
+
 typedef struct
 {
     uint8_t pin;
-    light_handle_t * light;  // light (endpoint_id) whose relay is toggled in hw by this ext cmd
+    light_handle_t * light;    // light (endpoint_id) whose relay is toggled in hw by this ext cmd
 
-    // debounced state (managed by push_btn_task ; leave zero-initialized)
-    bool active;             // stable level : true = ext cmd line currently high
-    TickType_t last_edge;    // time of the last ACCEPTED edge (bounce filter reference)
+    // managed by push_btn_task ; leave zero-initialized
+    // (all time references are PROCESSING time (xTaskGetTickCount at dequeue), never the isr
+    //  timestamp : the logic stays correct even if events sat in the queue during a stall)
+    ext_cmd_state_t state;
+    bool idle_lvl;             // level of the line at rest (sampled once at task start)
+    TickType_t last_event;     // time the last edge of this line was processed (quiet reference)
+    TickType_t pending_since;  // time the pending 1st edge was processed (confirm deadline)
+    TickType_t disarm_time;    // time the line entered SETTLING (idle-resync reference)
 
 } ext_cmd_ctx_t;
 
