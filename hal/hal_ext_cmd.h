@@ -9,16 +9,10 @@ extern "C" {
 #endif
 
 
-
-
 /**
- * @brief external cmd = a transistor  
- * 
- * 
+ * external cmd input : ext push btn switches 220Vac -> optocoupler (open collector) -> MCU pin
+ * active LOW : idle = 1 (pull-up), pressed = pulled to 0 (pulsing at 50Hz while held)
  */
-
-
-
 
 
 #include "driver/gpio.h"
@@ -35,13 +29,11 @@ typedef void (*ext_cmd_isr_t)(void * arg);
 /* headers                                                                                       */
 /*-----------------------------------------------------------------------------------------------*/
 
+/// @brief read the ext cmd pin level
 bool ext_cmd_get(uint8_t pin);
 
 
-/// @brief config an external command input pin (active HIGH : the external transistor drives
-///        the pin to 1 while the external push btn is pressed) ; pull-down keeps it at 0 when idle
-/// @param pin
-/// @param isr called on any edge ; pin nbr is passed as arg
+/// @brief config the pin : input, pull-up, isr on any edge
 void ext_cmd_init(uint8_t pin, ext_cmd_isr_t isr);
 
 

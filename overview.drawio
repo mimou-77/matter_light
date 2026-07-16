@@ -1,117 +1,740 @@
 <mxfile host="65bd71144e">
     <diagram id="HYK3kfEGzhCxfjowVZK_" name="Page-1">
-        <mxGraphModel dx="482" dy="134" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="5930" dy="2540" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="34" value="C" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-                    <mxGeometry x="240" y="425" width="30" height="30" as="geometry"/>
+                <mxCell id="190" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;dashed=1;strokeColor=#9673a6;" parent="1" vertex="1">
+                    <mxGeometry y="2390" width="1080" height="670" as="geometry"/>
                 </mxCell>
-                <mxCell id="35" value="E" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-                    <mxGeometry x="240" y="535" width="30" height="30" as="geometry"/>
+                <mxCell id="187" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;dashed=1;strokeColor=#9673a6;" parent="1" vertex="1">
+                    <mxGeometry y="1100" width="1080" height="1250" as="geometry"/>
                 </mxCell>
-                <mxCell id="33" value="B" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-                    <mxGeometry x="160" y="493" width="30" height="30" as="geometry"/>
+                <mxCell id="166" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="2120" width="590" height="217" as="geometry"/>
+                </mxCell>
+                <mxCell id="108" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;dashed=1;strokeColor=#9673a6;" parent="1" vertex="1">
+                    <mxGeometry y="320" width="785" height="740" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" value="C" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="257.5" y="510" width="30" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" value="E" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="257.5" y="600" width="30" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" value="B" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="215" y="570" width="30" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="12" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
-                    <mxGeometry x="40" y="20" width="470" height="260" as="geometry"/>
+                    <mxGeometry x="10" y="10" width="470" height="260" as="geometry"/>
                 </mxCell>
                 <mxCell id="2" value="hal_relay" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
-                    <mxGeometry x="90" y="200" width="90" height="30" as="geometry"/>
+                    <mxGeometry x="60" y="190" width="90" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="4" value="hal_push_btn" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
-                    <mxGeometry x="190" y="200" width="90" height="30" as="geometry"/>
+                    <mxGeometry x="160" y="190" width="90" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="5" value="hal_led" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
-                    <mxGeometry x="290" y="200" width="90" height="30" as="geometry"/>
+                    <mxGeometry x="260" y="190" width="90" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="6" value="hal_ext_cmd" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
-                    <mxGeometry x="390" y="200" width="90" height="30" as="geometry"/>
+                    <mxGeometry x="360" y="190" width="90" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="7" value="light_driver_matter" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
-                    <mxGeometry x="90" y="150" width="140" height="40" as="geometry"/>
+                    <mxGeometry x="60" y="140" width="140" height="40" as="geometry"/>
                 </mxCell>
                 <mxCell id="9" value="light_driver_matter" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
-                    <mxGeometry x="240" y="150" width="140" height="40" as="geometry"/>
+                    <mxGeometry x="210" y="140" width="140" height="40" as="geometry"/>
                 </mxCell>
                 <mxCell id="10" value="app_driver_matter" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
-                    <mxGeometry x="90" y="100" width="140" height="40" as="geometry"/>
+                    <mxGeometry x="60" y="90" width="140" height="40" as="geometry"/>
                 </mxCell>
                 <mxCell id="11" value="app_logic_matter" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
-                    <mxGeometry x="90" y="50" width="140" height="40" as="geometry"/>
+                    <mxGeometry x="60" y="40" width="140" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="15" value="hal_ext_cmd = transistor" style="swimlane;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;startSize=30;" parent="1" vertex="1">
-                    <mxGeometry x="320" y="350" width="280" height="150" as="geometry"/>
+                <mxCell id="27" value="&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="710" y="480" width="20" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="19" value="&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;b&gt;ext_cmd_get&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="15" vertex="1">
-                    <mxGeometry x="5" y="70" width="100" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="26" style="edgeStyle=none;html=1;" edge="1" parent="15" source="22">
+                <mxCell id="56" style="edgeStyle=none;html=1;exitX=0.7;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="28" edge="1">
                     <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="360" y="115" as="targetPoint"/>
+                        <mxPoint x="286.44827586206895" y="660" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="22" value="&lt;div&gt;&lt;span style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;&lt;b&gt;ext_cmd_init&lt;/b&gt;(uint8_t pin, ext_cmd_isr_t isr)&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="15" vertex="1">
-                    <mxGeometry x="5" y="100" width="260" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="23" value="&lt;b&gt;ext_cmd_isr_t&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="15" vertex="1">
-                    <mxGeometry x="180" y="40" width="100" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="27" value="Text" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-                    <mxGeometry x="675" y="448" width="50" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="29" style="edgeStyle=none;html=1;exitX=0.7;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;endArrow=classic;endFill=1;" edge="1" parent="1" source="28">
+                <mxCell id="59" style="edgeStyle=none;html=1;exitX=0.7;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;startArrow=classic;startFill=1;endArrow=none;endFill=0;" parent="1" source="28" edge="1">
                     <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="245" y="585" as="targetPoint"/>
-                        <mxPoint x="260" y="545" as="sourcePoint"/>
+                        <mxPoint x="286.44827586206895" y="480" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="31" style="edgeStyle=none;html=1;endArrow=none;endFill=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="28">
+                <mxCell id="28" value="" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;shape=mxgraph.electrical.transistors.npn_transistor_1;" parent="1" vertex="1">
+                    <mxGeometry x="235" y="535" width="75" height="75" as="geometry"/>
+                </mxCell>
+                <mxCell id="53" style="edgeStyle=none;html=1;exitX=0;exitY=0.8;exitDx=0;exitDy=0;endArrow=none;endFill=0;startArrow=classic;startFill=1;" parent="1" source="40" edge="1">
                     <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="150" y="495" as="targetPoint"/>
+                        <mxPoint x="75" y="575" as="targetPoint"/>
+                        <mxPoint x="95" y="572.155" as="sourcePoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="32" style="edgeStyle=none;html=1;exitX=0.7;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;endArrow=none;endFill=0;entryX=0.149;entryY=-0.024;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="28" target="34">
-                    <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="244.66666666666674" y="415" as="targetPoint"/>
-                    </mxGeometry>
+                <mxCell id="40" value="" style="html=1;shape=mxgraph.electrical.electro-mechanical.pushbutton;aspect=fixed;elSwitchState=off;rotation=0;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+                    <mxGeometry x="122.5" y="557.3299999999999" width="85" height="22.67" as="geometry"/>
                 </mxCell>
-                <mxCell id="28" value="" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;shape=mxgraph.electrical.transistors.npn_transistor_1;" vertex="1" parent="1">
-                    <mxGeometry x="185" y="445" width="85" height="100" as="geometry"/>
+                <mxCell id="46" value="ext push btn" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;dashed=1;dashPattern=1 4;strokeWidth=0;fontColor=light-dark(#b85450, #FF3399);" parent="1" vertex="1">
+                    <mxGeometry x="120" y="580" width="90" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="36" style="edgeStyle=none;html=1;endArrow=none;endFill=0;startArrow=classic;startFill=1;fillColor=#f8cecc;strokeColor=#b85450;" edge="1" parent="1">
-                    <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="140" y="583" as="targetPoint"/>
-                        <mxPoint x="140" y="493" as="sourcePoint"/>
-                    </mxGeometry>
+                <mxCell id="52" value="&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;background-color: transparent;&quot;&gt;- &lt;b&gt;btn not pressed :&lt;/b&gt;&amp;nbsp;&amp;nbsp;&lt;/font&gt;&lt;span style=&quot;background-color: transparent; color: rgb(63, 63, 63);&quot;&gt;B=0, tr blocked (&amp;lt;=&amp;gt; high Z), MCU_pin = 1 (pullup)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;- &lt;/span&gt;&lt;b style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;btn pressed :&lt;/b&gt;&lt;span style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt; B=220V AC =&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;&lt;b&gt;&lt;u&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;-- positive alt (i&amp;gt;0) :&lt;/u&gt;&lt;/b&gt;&lt;/font&gt;&lt;font style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;&amp;nbsp;tr&amp;nbsp;&lt;/font&gt;&lt;span style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;saturated =&amp;gt; current flows from C to E =&amp;gt; MCU_pin linked to GND =&amp;gt; MCU_pin = 0&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: rgb(63, 63, 63);&quot;&gt;&lt;u style=&quot;font-weight: bold;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;-- negative alt (i&amp;lt;=0):&lt;/u&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: rgb(63, 63, 63);&quot;&gt;&amp;nbsp;tr&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=14;flipV=0;flipH=1;align=left;fontSize=13;spacingTop=10;spacing=10;spacingLeft=10;spacingBottom=10;spacingRight=10;" parent="1" vertex="1">
+                    <mxGeometry x="5.63" y="330" width="258.75" height="190" as="geometry"/>
                 </mxCell>
-                <mxCell id="37" value="220V AC" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;dashed=1;dashPattern=1 4;strokeWidth=0;fontColor=light-dark(#b85450, #FF3399);" vertex="1" parent="1">
-                    <mxGeometry x="70" y="530" width="70" height="30" as="geometry"/>
+                <mxCell id="54" value="L" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="45" y="557.3299999999999" width="30" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="47" style="edgeStyle=none;html=1;exitX=1;exitY=0.8;exitDx=0;exitDy=0;startArrow=classic;startFill=1;endArrow=none;endFill=0;" edge="1" parent="1" source="40">
-                    <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="239.1428571428571" y="310" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="40" value="" style="html=1;shape=mxgraph.electrical.electro-mechanical.pushbutton;aspect=fixed;elSwitchState=off;rotation=-90;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
-                    <mxGeometry x="190" y="365" width="85" height="22.67" as="geometry"/>
-                </mxCell>
-                <mxCell id="43" style="edgeStyle=none;html=1;exitX=0;exitY=0.8;exitDx=0;exitDy=0;entryX=0.149;entryY=-0.01;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;endFill=0;" edge="1" parent="1" source="40" target="34">
+                <mxCell id="55" style="edgeStyle=none;html=1;exitX=1;exitY=0.8;exitDx=0;exitDy=0;entryX=0.806;entryY=0.09;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;endFill=0;" parent="1" source="40" target="33" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="46" value="ext push btn" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;dashed=1;dashPattern=1 4;strokeWidth=0;fontColor=light-dark(#b85450, #FF3399);" vertex="1" parent="1">
-                    <mxGeometry x="130" y="357.67" width="90" height="30" as="geometry"/>
+                <mxCell id="58" value="MCU GND" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;dashed=1;dashPattern=1 4;strokeWidth=0;fontColor=light-dark(#b85450, #FF3399);" parent="1" vertex="1">
+                    <mxGeometry x="250" y="660" width="80" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="48" value="L" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-                    <mxGeometry x="210" y="290" width="30" height="30" as="geometry"/>
+                <mxCell id="60" value="MCU pin" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;dashed=1;dashPattern=1 4;strokeWidth=0;fontColor=light-dark(#b85450, #FF3399);" parent="1" vertex="1">
+                    <mxGeometry x="275" y="450" width="70" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="49" value="" style="endArrow=open;html=1;rounded=0;curved=1;fillColor=#d5e8d4;strokeColor=#82b366;endFill=0;" edge="1" parent="1">
+                <mxCell id="61" style="edgeStyle=none;html=1;exitX=0;exitY=0.8;exitDx=0;exitDy=0;endArrow=none;endFill=0;startArrow=classic;startFill=1;" parent="1" source="62" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="60" y="847.6700000000001" as="targetPoint"/>
+                        <mxPoint x="80" y="844.825" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="62" value="" style="html=1;shape=mxgraph.electrical.electro-mechanical.pushbutton;aspect=fixed;elSwitchState=off;rotation=0;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+                    <mxGeometry x="107.5" y="830" width="85" height="22.67" as="geometry"/>
+                </mxCell>
+                <mxCell id="63" value="ext push btn" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;dashed=1;dashPattern=1 4;strokeWidth=0;fontColor=light-dark(#b85450, #FF3399);" parent="1" vertex="1">
+                    <mxGeometry x="105" y="852.6700000000001" width="90" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="64" value="L" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="30" y="830" width="30" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="65" value="" style="pointerEvents=1;verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;shape=mxgraph.electrical.resistors.resistor_1;" parent="1" vertex="1">
+                    <mxGeometry x="215" y="830" width="75" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="78" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" parent="1" source="67" target="77" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="67" value="" style="pointerEvents=1;verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;shape=mxgraph.electrical.resistors.resistor_1;" parent="1" vertex="1">
+                    <mxGeometry x="300" y="830" width="80" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="68" style="edgeStyle=none;html=1;exitX=1;exitY=0.8;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;endFill=0;" parent="1" source="62" target="65" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="69" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;endFill=0;" parent="1" source="65" target="67" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="71" value="" style="pointerEvents=1;verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;shape=mxgraph.electrical.waveforms.sine_wave;" parent="1" vertex="1">
+                    <mxGeometry x="35" y="890" width="40" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="72" value="" style="pointerEvents=1;verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;shape=mxgraph.electrical.waveforms.sine_wave;" parent="1" vertex="1">
+                    <mxGeometry x="75" y="890" width="40" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="74" style="edgeStyle=none;html=1;exitX=1;exitY=0.8;exitDx=0;exitDy=0;endArrow=none;endFill=0;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="26.5" y="920" as="sourcePoint"/>
+                        <mxPoint x="122.5" y="920" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="75" value="220 V AC ; 50 Hz" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="25" y="938" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="76" value="high R = 440 KOHM" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="230" y="800" width="130" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="77" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
+                    <mxGeometry x="405" y="760" width="210" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="79" value="" style="endArrow=classic;html=1;rounded=0;curved=1;" parent="1" edge="1">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="90" y="410" as="sourcePoint"/>
-                        <mxPoint x="230" y="440" as="targetPoint"/>
+                        <mxPoint x="380" y="850" as="sourcePoint"/>
+                        <mxPoint x="395" y="980" as="targetPoint"/>
                         <Array as="points">
-                            <mxPoint x="110" y="430"/>
-                            <mxPoint x="170" y="440"/>
+                            <mxPoint x="345" y="930"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="81" value="" style="pointerEvents=1;verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;shape=mxgraph.electrical.waveforms.sine_wave;" parent="1" vertex="1">
+                    <mxGeometry x="386.5" y="990" width="40" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="84" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;low i&lt;/span&gt;&amp;nbsp;; 50 Hz" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="391.5" y="1018" width="90" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="86" value="" style="edgeStyle=none;html=1;exitX=1;exitY=0.8;exitDx=0;exitDy=0;endArrow=none;endFill=0;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="378" y="1000" as="sourcePoint"/>
+                        <mxPoint x="481.5" y="1000" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="85" value="" style="pointerEvents=1;verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;shape=mxgraph.electrical.waveforms.sine_wave;" parent="1" vertex="1">
+                    <mxGeometry x="426.5" y="990" width="40" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="87" value="" style="endArrow=classic;html=1;rounded=0;curved=1;" parent="1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="70" y="860" as="sourcePoint"/>
+                        <mxPoint x="75" y="900" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="60" y="880"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="88" value="" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;shape=mxgraph.electrical.opto_electronics.led_2;pointerEvents=1;" parent="1" vertex="1">
+                    <mxGeometry x="406.5" y="812.67" width="58.5" height="47.33" as="geometry"/>
+                </mxCell>
+                <mxCell id="91" style="edgeStyle=none;html=1;exitX=0.7;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;rounded=0;curved=0;endArrow=none;endFill=0;" parent="1" source="89" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="655" y="720" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="655" y="815"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="92" style="edgeStyle=none;html=1;exitX=0.7;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;rounded=0;curved=0;endArrow=none;endFill=0;" parent="1" source="89" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="655" y="960" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="655" y="865"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="89" value="" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;shape=mxgraph.electrical.transistors.npn_transistor_1;" parent="1" vertex="1">
+                    <mxGeometry x="525" y="815" width="70" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="94" value="MCU GND" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;dashed=1;dashPattern=1 4;strokeWidth=0;fontColor=light-dark(#b85450, #FF3399);" parent="1" vertex="1">
+                    <mxGeometry x="615" y="960" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="95" value="MCU pin" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;dashed=1;dashPattern=1 4;strokeWidth=0;fontColor=light-dark(#b85450, #FF3399);" parent="1" vertex="1">
+                    <mxGeometry x="620" y="690" width="70" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="96" value="(input, pullup)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;dashed=1;dashPattern=1 4;strokeWidth=0;fontColor=light-dark(#b85450, #FF3399);" parent="1" vertex="1">
+                    <mxGeometry x="670" y="690" width="100" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="97" value="" style="endArrow=classic;html=1;rounded=0;curved=1;" parent="1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="530" y="850" as="sourcePoint"/>
+                        <mxPoint x="545" y="980" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="495" y="930"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="104" value="" style="pointerEvents=1;verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;shape=mxgraph.electrical.waveforms.pulse_1;" parent="1" vertex="1">
+                    <mxGeometry x="557.25" y="990" width="47.75" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="105" value="" style="pointerEvents=1;verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;shape=mxgraph.electrical.waveforms.pulse_1;" parent="1" vertex="1">
+                    <mxGeometry x="520.38" y="990" width="47.75" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="106" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;low i&lt;/span&gt;&amp;nbsp;; 50 Hz" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="520.38" y="1010" width="90" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="110" value="hal_ext_cmd = transistor" style="swimlane;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;startSize=30;" parent="1" vertex="1">
+                    <mxGeometry x="35" y="1120" width="280" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="111" value="&lt;div style=&quot;color: rgb(212, 212, 212); background-color: rgb(30, 30, 30); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="-10" y="1268" width="20" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="112" value="&lt;div style=&quot;color: #d4d4d4;background-color: #1e1e1e;font-family: Consolas, &#39;Courier New&#39;, monospace;font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #4ec9b0;&quot;&gt;ext_cmd_isr_t&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="190" y="1160" width="110" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="116" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;rounded=0;curved=1;" parent="1" source="113" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="487.51" y="1275.0000000000002" as="sourcePoint"/>
+                        <mxPoint x="430" y="1150" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="330" y="1210"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="113" value="&lt;div style=&quot;color: rgb(212, 212, 212); background-color: rgb(30, 30, 30); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-weight: normal; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(200, 200, 200);&quot;&gt;ext_cmd_get(pin)&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="1190" width="130" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="114" value="&lt;div style=&quot;color: rgb(212, 212, 212); background-color: rgb(30, 30, 30); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-weight: normal; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(200, 200, 200);&quot;&gt;ext_cmd_init(pin, isr)&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="1220" width="190" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="115" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;&quot;&gt;357T&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="530" y="740" width="60" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="117" value="&lt;div style=&quot;color: rgb(212, 212, 212); background-color: rgb(30, 30, 30); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-weight: normal; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="437.25" y="1130" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="119" value="&lt;div style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;span&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;gpio_get_level&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;labelBackgroundColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="425" y="1130" width="130" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="120" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;rounded=0;curved=1;entryX=-0.002;entryY=0.393;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="121" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="215" y="1240" as="sourcePoint"/>
+                        <mxPoint x="475" y="1180" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="375" y="1240"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="121" value="&lt;div style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;span&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;config gpio : input,pulldownn,&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;span&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;intr anyedge &lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;with isr&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;labelBackgroundColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="465" y="1170" width="250" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="123" value="light_driver_matter" style="swimlane;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;startSize=30;" parent="1" vertex="1">
+                    <mxGeometry x="35" y="1310" width="555" height="650" as="geometry"/>
+                </mxCell>
+                <mxCell id="124" value="&lt;div style=&quot;background-color: rgb(30, 30, 30); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-weight: normal; font-size: 14px; line-height: 19px; white-space: pre; color: rgb(212, 212, 212);&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;div style=&quot;color: rgb(212, 212, 212); line-height: 19px;&quot;&gt;&lt;span style=&quot;color: rgb(78, 201, 176);&quot;&gt;light_handle_t =&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(212, 212, 212); line-height: 19px;&quot;&gt;&lt;span style=&quot;color: rgb(78, 201, 176);&quot;&gt;enpoint_id, relay_pin, push_btn_pin, ext_cmd_pin&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" parent="123" vertex="1">
+                    <mxGeometry x="122.5" y="40" width="377.5" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="129" value="&lt;div style=&quot;color: rgb(212, 212, 212); background-color: rgb(30, 30, 30); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-weight: normal; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(78, 201, 176);&quot;&gt;ext_cmd_state_t = armed, pendingn settling&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" parent="123" vertex="1">
+                    <mxGeometry x="122.5" y="150" width="337.5" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="130" value="&lt;div style=&quot;color: rgb(212, 212, 212); background-color: rgb(30, 30, 30); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-weight: normal; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(78, 201, 176);&quot;&gt;ext_cmd_ctx_t = &lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(78, 201, 176);&quot;&gt;state, idle_lvl, last_event, pending_since, disarm_time&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" parent="123" vertex="1">
+                    <mxGeometry x="122.5" y="190" width="427.5" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="133" value="&lt;div style=&quot;color: rgb(212, 212, 212); background-color: rgb(30, 30, 30); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-weight: normal; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(78, 201, 176);&quot;&gt;light_ctx_t = btn_1, btn_2, ext_1, ext_2&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" parent="123" vertex="1">
+                    <mxGeometry x="122.5" y="250" width="317.5" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="134" value="&lt;div style=&quot;color: rgb(212, 212, 212); background-color: rgb(30, 30, 30); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-weight: normal; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(200, 200, 200);&quot;&gt;create_light (light_node, relay_pin, push_btn_pin, ext_cmd_pin)&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" parent="123" vertex="1">
+                    <mxGeometry x="15" y="440" width="130" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="135" value="&lt;div style=&quot;color: rgb(212, 212, 212); background-color: rgb(30, 30, 30); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-weight: normal; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(200, 200, 200);&quot;&gt;push_btn_isr (void * arg)&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" parent="123" vertex="1">
+                    <mxGeometry x="15" y="480" width="205" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="136" value="&lt;div style=&quot;color: rgb(212, 212, 212); background-color: rgb(30, 30, 30); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-weight: normal; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(200, 200, 200);&quot;&gt;push_btn_task (void * pvParameters)&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" parent="123" vertex="1">
+                    <mxGeometry x="15" y="520" width="275" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="137" value="&lt;div style=&quot;color: rgb(212, 212, 212); background-color: rgb(30, 30, 30); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-weight: normal; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(200, 200, 200);&quot;&gt;fctry_reset_timer_cb (void * args)&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" parent="123" vertex="1">
+                    <mxGeometry x="15" y="560" width="275" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="138" value="light_handle_t  light_handles [MAX_LIGHTS]&#xa;&#xa;light_count&#xa;&#xa;queue" style="text;whiteSpace=wrap;fontStyle=0" parent="123" vertex="1">
+                    <mxGeometry x="85" y="320" width="265" height="95" as="geometry"/>
+                </mxCell>
+                <mxCell id="142" style="edgeStyle=none;html=1;rounded=0;curved=1;" parent="123" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="575" y="540" as="targetPoint"/>
+                        <mxPoint x="195" y="500" as="sourcePoint"/>
+                        <Array as="points">
+                            <mxPoint x="205" y="520"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="144" style="edgeStyle=none;html=1;rounded=0;curved=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="123" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="580" y="590" as="targetPoint"/>
+                        <mxPoint x="285" y="540" as="sourcePoint"/>
+                        <Array as="points">
+                            <mxPoint x="300" y="560"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="180" value="&lt;div style=&quot;color: rgb(212, 212, 212); background-color: rgb(30, 30, 30); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-weight: normal; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(200, 200, 200);&quot;&gt;light_toggle_onoff&lt;/span&gt;&lt;span style=&quot;color: rgb(212, 212, 212);&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: rgb(127, 127, 127);&quot;&gt;light_handle&lt;/span&gt;&lt;span style=&quot;color: rgb(212, 212, 212);&quot;&gt;)&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" parent="123" vertex="1">
+                    <mxGeometry x="15" y="610" width="255" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="127" value="&lt;div style=&quot;color: rgb(212, 212, 212); background-color: rgb(30, 30, 30); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-weight: normal; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(78, 201, 176);&quot;&gt;btn_event_t = pin, lvl, timestamp&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="157.5" y="1400" width="260" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="128" value="&lt;div style=&quot;color: rgb(212, 212, 212); background-color: rgb(30, 30, 30); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-weight: normal; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(78, 201, 176);&quot;&gt;btn_ctx_t = pressed, in_combo, last_edge&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="157.5" y="1430" width="320" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="132" value="-armed :&amp;nbsp;&lt;div&gt;-pending : an edge happened&lt;/div&gt;&lt;div&gt;-settling :&amp;nbsp;&amp;nbsp;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="660" y="1298" width="180" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="131" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;rounded=0;curved=1;entryX=0.022;entryY=0.961;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="129" target="132" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="660" y="1360" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="610" y="1490"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="139" style="edgeStyle=none;html=1;rounded=0;curved=1;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="636" y="1690" as="targetPoint"/>
+                        <mxPoint x="530" y="1760" as="sourcePoint"/>
+                        <Array as="points">
+                            <mxPoint x="546" y="1710"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="140" value="create queue,&amp;nbsp;&lt;div&gt;config gpio,&lt;/div&gt;&lt;div&gt;assign &lt;b&gt;push_btn_isr &lt;/b&gt;from same file,&amp;nbsp;&lt;/div&gt;&lt;div&gt;light_handle (the pins)&lt;/div&gt;&lt;div&gt;creante onoff_light endpoint (bode, light_handle)&lt;/div&gt;&lt;div&gt;store endpoint_id in light_handle&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="640" y="1680" width="280" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="141" style="edgeStyle=none;html=1;rounded=0;curved=1;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="250" y="1810" as="targetPoint"/>
+                        <mxPoint x="710" y="1730" as="sourcePoint"/>
+                        <Array as="points">
+                            <mxPoint x="640" y="1810"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="143" value="pin = arg, event = pin, get_lvl, now&lt;div&gt;send event to queue&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="615" y="1840" width="210" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="145" value="&lt;div&gt;handles the state machine of ext_btns &amp;amp;&amp;amp; the state machine of btns :&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;light_ctx = pvParameters&lt;div&gt;btns[2] = btn_1, btn_2 : from light_ctx&lt;/div&gt;&lt;div&gt;exts[2] = ext_1, ext_2 : from light_ctx&lt;/div&gt;&lt;div style=&quot;&quot;&gt;create fctry_reset_timer, assign &lt;b&gt;cb &lt;/b&gt;from the same file&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;startup : for 2 exts =&amp;gt; set state to ARMED , idle_lvl to pin_lvl&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;while(1) :&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;if queue receives an elt = event :&lt;/div&gt;&lt;div style=&quot;&quot;&gt;ext_btn or btn ? (if exts[i]==event.pin =&amp;gt; ext_btn event, else : btn)&lt;/div&gt;&lt;div style=&quot;&quot;&gt;- if ext_btn :&lt;/div&gt;&lt;div style=&quot;&quot;&gt;get the pin corresponding to the event (ext_btn_1_pin or ext_btn_2_pin),&lt;/div&gt;&lt;div style=&quot;&quot;&gt;update the state machine&lt;/div&gt;&lt;div style=&quot;&quot;&gt;- if btn :&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;btn_1_pin or btn_2_pin ? , debounce filter&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;if not debounce :&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;handle btns state machine :&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;-- if&amp;nbsp; btn pressed (negedge) : update btn-&amp;gt;pressed,last_edge,press_time&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;, if both pressed : timer start&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;-- if btn released (posedge) : if both pressed : stop timer,&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;if not in combo : duration = event.timestamp - btn-&amp;gt;press_time,&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;if duration &amp;lt;&amp;nbsp;LONG_PRESS_INF_MS : short press : light_toggle_onoff(btn-&amp;gt;light)&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;else : long press : do nothing&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="615" y="1890" width="450" height="400" as="geometry"/>
+                </mxCell>
+                <mxCell id="151" style="edgeStyle=none;html=1;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;rounded=0;curved=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" source="148" target="149" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="122.5" y="2207" as="sourcePoint"/>
+                        <mxPoint x="256.57359312880726" y="2168.715728752538" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="152.5" y="2147"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="148" value="armed&amp;nbsp;&lt;div&gt;(=idle)&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="100" y="2217" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="149" value="pending" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="276.5" y="2167" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="150" value="settling" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="450" y="2207" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="152" value="an edge happened on an ext_btn_pin&lt;div&gt;&amp;nbsp;(&amp;lt;=&amp;gt; event on a ext pin)&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#82b366;fillColor=#d5e8d4;" parent="1" vertex="1">
+                    <mxGeometry x="17.5" y="2140" width="220" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="156" value="" style="labelPosition=right;align=left;strokeWidth=1;shape=mxgraph.mockup.markup.curlyBrace;html=1;shadow=0;dashed=0;strokeColor=#999999;direction=north;" parent="1" vertex="1">
+                    <mxGeometry x="305" y="2247" width="15" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="157" value="ext-&amp;gt;state = PENDING,&lt;div&gt;ext-&amp;gt;pending_since = now&amp;nbsp;&lt;/div&gt;&lt;div&gt;ext-&amp;gt;last_event = now&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=8;" parent="1" vertex="1">
+                    <mxGeometry x="315" y="2242" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="160" style="edgeStyle=none;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;rounded=0;curved=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" source="149" target="150" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="309.5" y="2044" as="sourcePoint"/>
+                        <mxPoint x="485.5" y="1994" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="430" y="2090"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="159" value="an edge happened on an ext_btn_pin" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#82b366;fillColor=#d5e8d4;" parent="1" vertex="1">
+                    <mxGeometry x="367.25" y="2127" width="220" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="163" value="" style="labelPosition=right;align=left;strokeWidth=1;shape=mxgraph.mockup.markup.curlyBrace;html=1;shadow=0;dashed=0;strokeColor=#999999;direction=north;" parent="1" vertex="1">
+                    <mxGeometry x="465" y="2287" width="15" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="164" value="ext-&amp;gt;state = SETTLING,&lt;div&gt;ext-&amp;gt;disarm_time= now&lt;/div&gt;&lt;div&gt;light_toggle(ext-&amp;gt;light)&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;ext-&amp;gt;last_event = now&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=8;" parent="1" vertex="1">
+                    <mxGeometry x="477.25" y="2282" width="110" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="168" style="edgeStyle=none;html=1;rounded=0;curved=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="137" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="510" y="1923" as="targetPoint"/>
+                        <mxPoint x="790" y="1980" as="sourcePoint"/>
+                        <Array as="points">
+                            <mxPoint x="450" y="1943"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="182" value="get attribute val, update attr val to !val;&amp;nbsp;&lt;br&gt;app_driver_attrupdate calls the driver to do the hw toggle" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="276.5" y="1985" width="330" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="183" style="edgeStyle=none;html=1;rounded=0;curved=1;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="320" y="2000" as="targetPoint"/>
+                        <mxPoint x="267.23" y="1943.8" as="sourcePoint"/>
+                        <Array as="points">
+                            <mxPoint x="300" y="1990"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="185" style="edgeStyle=none;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;rounded=0;curved=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" source="150" target="148" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="294" y="2359" as="sourcePoint"/>
+                        <mxPoint x="425" y="2387" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="280" y="2350"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="186" value="no edge for&amp;nbsp;SETTLE_MS" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#82b366;fillColor=#d5e8d4;" parent="1" vertex="1">
+                    <mxGeometry x="266.5" y="2292" width="160" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="208" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="188" target="191" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="188" value="init nvs flash" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" parent="1" vertex="1">
+                    <mxGeometry x="213.84" y="2455" width="117.5" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="189" value="&amp;nbsp; &amp;nbsp; &amp;nbsp; app_main" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=14;flipH=1;fillColor=#e1d5e7;strokeColor=#9673a6;align=left;" parent="1" vertex="1">
+                    <mxGeometry y="2370" width="1080" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="209" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="191" target="195" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="191" value="create &lt;b&gt;node&lt;/b&gt;, attach &lt;b&gt;app_attribute_update_cb &lt;/b&gt;&amp;amp; app_identification_cb" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;size=0.02277747989276116;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
+                    <mxGeometry x="63.690000000000005" y="2505" width="417.81" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="210" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="195" target="197" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="195" value="create_light : &lt;b&gt;light_handle_1&lt;/b&gt; (pins of btn_1+ext_btn_1+relay_1)&amp;nbsp;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;size=0.02277747989276116;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
+                    <mxGeometry x="78.12999999999998" y="2565" width="388.91" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="211" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="197" target="199" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="197" value="create_light : &lt;b&gt;light_handle_2&amp;nbsp;&lt;/b&gt;(pins of btn_2+ext_btn_2+relay_2)&amp;nbsp;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;size=0.02277747989276116;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
+                    <mxGeometry x="78.12999999999998" y="2625" width="388.91" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="215" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="199" target="201" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="199" value="led_init (led_pin)" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
+                    <mxGeometry x="213.83" y="2685" width="117.5" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="216" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="201" target="203" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="201" value="config thread (radio, host, port)" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;size=0.05865736858366052;" parent="1" vertex="1">
+                    <mxGeometry x="159.29000000000002" y="2735" width="226.57" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="203" value="&lt;b&gt;start matter &lt;/b&gt;; attach &lt;b&gt;app_event_cb&lt;/b&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;size=0.05865736858366052;" parent="1" vertex="1">
+                    <mxGeometry x="155.06" y="2785" width="235.07" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="220" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="205" target="219" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="205" value="&lt;b&gt;light_ctx &lt;/b&gt;:&amp;nbsp;&lt;div&gt;&lt;u&gt;- btn_1&lt;/u&gt; = btn_1_pin,light_1_handle, press_time=0&lt;/div&gt;&lt;div&gt;&lt;u style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251);&quot;&gt;- btn_2&lt;/u&gt;&lt;span style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251);&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;= btn_2_pin,light_2_handle, press_time=0&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;- &lt;u&gt;ext_1&lt;/u&gt; = ext_1_pin, light_1_handle&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;- &lt;/span&gt;&lt;u style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251);&quot;&gt;ext_2&lt;/u&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt; = ext_2_pin, light_2_handle&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;size=0.05865736858366052;align=left;spacingLeft=6;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
+                    <mxGeometry x="109.66999999999999" y="2835" width="315.79" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="218" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.515;entryY=0.004;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="203" target="205" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="219" value="create &lt;b&gt;push_btn_task &lt;/b&gt;; with &lt;b&gt;initial arg = light_ctx&lt;/b&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;size=0.05865736858366052;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
+                    <mxGeometry x="108.18999999999998" y="2965" width="318.76" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="223" value="when an attribute val changes: do this :&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp;call : &lt;b&gt;app_driver_attribute_update &lt;/b&gt;(&lt;u&gt;driver_handle&lt;/u&gt;, endpoint_id, cluster_id, attribute_id, &lt;u&gt;val&lt;/u&gt;)&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#dae8fc;strokeColor=#6c8ebf;size=18;align=left;spacingLeft=3;spacingRight=3;" parent="1" vertex="1">
+                    <mxGeometry x="540" y="2445" width="510" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="224" value="" style="endArrow=classic;html=1;exitX=0.59;exitY=0.375;exitDx=0;exitDy=0;exitPerimeter=0;rounded=0;curved=1;entryX=-0.001;entryY=0.357;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" source="191" target="223" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="510" y="2540" as="sourcePoint"/>
+                        <mxPoint x="560" y="2490" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="420" y="2480"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="225" value="if cluster_id is onoff :&amp;nbsp;&lt;div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;get &lt;/span&gt;&lt;u style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;relay_pin &lt;/u&gt;&lt;span style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;from driver_handle=light_handle,&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;set &lt;/span&gt;&lt;b style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;relay &lt;/b&gt;&lt;span style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;to &lt;/span&gt;&lt;u style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;val&lt;/u&gt;&lt;/div&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#dae8fc;strokeColor=#6c8ebf;size=18;align=left;spacingLeft=3;spacingRight=3;" parent="1" vertex="1">
+                    <mxGeometry x="650" y="2510" width="420" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="226" value="" style="endArrow=classic;html=1;rounded=0;curved=1;entryX=-0.003;entryY=0.226;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" target="225" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="639.997272727273" y="2500" as="sourcePoint"/>
+                        <mxPoint x="617.27" y="2545" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="610" y="2520"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="229" value="- create &lt;b&gt;queue &lt;/b&gt;(btns events queue)&lt;div&gt;- config &lt;b&gt;gpios &lt;/b&gt;for : relay_pin, push_btn_pin &amp;amp;&amp;amp; ext_cmd_pin : both with &lt;u&gt;isr = push_btn_isr&lt;/u&gt;&lt;/div&gt;&lt;div&gt;- &lt;b&gt;light_handle&lt;/b&gt;&amp;nbsp;{btn_pin, ext_btn_pin, relay_pin}&lt;/div&gt;&lt;div&gt;- create &lt;b&gt;on_off_light&amp;nbsp;endpoint &lt;/b&gt;attached to node and handle&lt;/div&gt;&lt;div&gt;- store endpoint_id in light_handle&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#dae8fc;strokeColor=#6c8ebf;size=18;align=left;spacingLeft=3;spacingRight=3;" parent="1" vertex="1">
+                    <mxGeometry x="540" y="2590" width="500" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="230" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;rounded=0;curved=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" source="195" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="320" y="2530" as="sourcePoint"/>
+                        <mxPoint x="540" y="2614" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="490" y="2600"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="231" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;rounded=0;curved=1;fillColor=#dae8fc;strokeColor=#6c8ebf;entryX=0;entryY=0.27;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="197" target="229" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="477" y="2595" as="sourcePoint"/>
+                        <mxPoint x="540" y="2610" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="490" y="2620"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="232" value="send event={pin_nbr, pin_lvl, timestamp} to queue" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#dae8fc;strokeColor=#6c8ebf;size=14;align=left;spacingLeft=3;spacingRight=3;" parent="1" vertex="1">
+                    <mxGeometry x="790" y="2685" width="280" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="233" value="" style="endArrow=classic;html=1;rounded=0;curved=1;fillColor=#dae8fc;strokeColor=#6c8ebf;entryX=-0.004;entryY=0.274;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="232" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="960" y="2627.78" as="sourcePoint"/>
+                        <mxPoint x="840" y="2680" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="720" y="2700"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="234" value="config gpio, blink for 1s" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#dae8fc;strokeColor=#6c8ebf;size=14;align=left;spacingLeft=3;spacingRight=3;" parent="1" vertex="1">
+                    <mxGeometry x="540" y="2715" width="140" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="235" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;rounded=0;curved=1;fillColor=#dae8fc;strokeColor=#6c8ebf;entryX=0.001;entryY=0.3;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="199" target="234" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="435" y="2750" as="sourcePoint"/>
+                        <mxPoint x="508" y="2719" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="458" y="2725"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="236" value="if queue receives an event :&lt;div&gt;-&amp;nbsp; check if its an ext_btn pin or a btn_pin (compare with task args)&lt;/div&gt;&lt;div&gt;- if ext_btn pin : execute &lt;b&gt;ext_btn_state_machine&lt;/b&gt;&lt;/div&gt;&lt;div&gt;-&amp;nbsp;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;if btn pin : execute &lt;b&gt;btn_state_machine &lt;/b&gt;(if both pressed : factory_reset)&lt;/span&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#dae8fc;strokeColor=#6c8ebf;size=14;align=left;spacingLeft=3;spacingRight=3;" parent="1" vertex="1">
+                    <mxGeometry x="540" y="2945" width="510" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="237" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;rounded=0;curved=1;fillColor=#dae8fc;strokeColor=#6c8ebf;entryX=-0.001;entryY=0.178;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="219" target="236" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="411" y="2971.5" as="sourcePoint"/>
+                        <mxPoint x="620" y="2998.5" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="490" y="2960"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="238" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;dashed=1;strokeColor=#9673a6;" parent="1" vertex="1">
+                    <mxGeometry y="3120" width="1350" height="600" as="geometry"/>
+                </mxCell>
+                <mxCell id="243" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="239" target="242" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="239" value="only btn_x pressed" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="3160" width="145" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="240" value="both btns pressed" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="3240" width="145" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="241" value="ext_btn_x pressed" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="3440" width="145" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="245" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="242" target="244" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="242" value="intr on pin_x triggered" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
+                    <mxGeometry x="220" y="3150" width="130" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="247" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="244" target="246" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="244" value="push_btn_isr executes" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
+                    <mxGeometry x="360" y="3150" width="130" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="249" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="246" target="248" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="246" value="event sent to queue" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
+                    <mxGeometry x="502.38" y="3150" width="117.62" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="251" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="248" target="250" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="248" value="push_btn_task receives event from the queue, checks if btn or ext_btn, btn,&amp;nbsp;&lt;span style=&quot;color: rgb(51, 51, 51);&quot;&gt;checks if combo, no combo,&amp;nbsp;&lt;/span&gt;updates the corresponding &lt;b&gt;attribute &lt;/b&gt;val to !val" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
+                    <mxGeometry x="633.5" y="3133.75" width="296.5" height="72.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="250" value="&lt;b&gt;app_driver_attribute_update_cb &lt;/b&gt;executes : toggles the corresponding &lt;b&gt;relay&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
+                    <mxGeometry x="950" y="3142.5" width="250" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="257" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="240" target="259" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="186.75" y="3275" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="258" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="259" target="261" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="259" value="intr on pin_x triggered" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
+                    <mxGeometry x="221.75" y="3235" width="130" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="260" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="261" target="263" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="261" value="push_btn_isr executes" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
+                    <mxGeometry x="361.75" y="3235" width="130" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="262" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="263" target="265" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="263" value="event sent to queue" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
+                    <mxGeometry x="504.13" y="3235" width="117.62" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="268" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="265" target="266" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="269" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="265" target="267" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="265" value="push_btn_task receives event from the queue,&amp;nbsp;&lt;span style=&quot;color: rgb(51, 51, 51);&quot;&gt;checks if btn or ext_btn, btn,&amp;nbsp;&lt;/span&gt;checks for combo, combo, starts the &lt;b&gt;fctry_reset_timer&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
+                    <mxGeometry x="631.75" y="3220" width="260" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="274" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="266" target="270" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="266" value="timer expires and :&lt;br&gt;- no release on btn_x&lt;div&gt;- no release on btn_y&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
+                    <mxGeometry x="932.38" y="3250" width="147.62" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="272" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="267" target="271" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="267" value="before timer expires :&lt;br&gt;- release on btn_x OR&amp;nbsp;&lt;span style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;release on btn_y&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
+                    <mxGeometry x="932.38" y="3320" width="217.62" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="270" value="&lt;b&gt;factory_reset &lt;/b&gt;: matter data deleted from nvs + device restart" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
+                    <mxGeometry x="1090" y="3252.5" width="190" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="271" value="timer stopped&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
+                    <mxGeometry x="1160" y="3322.5" width="180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="273" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;b&gt;&lt;u&gt;Note&lt;/u&gt; : only short press&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="555" y="3660" width="200" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="293" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="275" target="292" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="275" value="from mobile_app :&amp;nbsp;&lt;div&gt;light_x is toggled&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="3580" width="140" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="280" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="241" target="282" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="190" y="3466.25" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="281" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="282" target="284" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="282" value="intr on pin_x triggered" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
+                    <mxGeometry x="225" y="3426.25" width="130" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="283" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="284" target="286" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="284" value="push_btn_isr executes" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
+                    <mxGeometry x="365" y="3426.25" width="130" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="285" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="286" target="287" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="286" value="event sent to queue" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
+                    <mxGeometry x="507.38" y="3426.25" width="117.62" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="289" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="287" target="288" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="287" value="push_btn_task receives event from the queue, checks if btn or ext_btn, ext_btn, executes the state machine&lt;span style=&quot;color: rgb(51, 51, 51);&quot;&gt;, when enterning settling state:&amp;nbsp;&lt;/span&gt;updates the corresponding &lt;b&gt;attribute &lt;/b&gt;val to !val" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
+                    <mxGeometry x="638.5" y="3410" width="296.5" height="72.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="288" value="&lt;b&gt;app_driver_attribute_update_cb &lt;/b&gt;executes : toggles the corresponding &lt;b&gt;relay&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
+                    <mxGeometry x="950" y="3418.75" width="250" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="291" value="&lt;b&gt;app_driver_attribute_update_cb &lt;/b&gt;executes : toggles the corresponding &lt;b&gt;relay&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
+                    <mxGeometry x="404.99999999999994" y="3550" width="250" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="294" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="292" target="291" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="292" value="attribute val is set to !val" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
+                    <mxGeometry x="225" y="3550" width="167.5" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="295" value="&amp;nbsp; &amp;nbsp; &amp;nbsp; functionning logic" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=14;flipH=1;fillColor=#e1d5e7;strokeColor=#9673a6;align=left;" parent="1" vertex="1">
+                    <mxGeometry y="3080" width="1350" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="296" value="&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;- logs commissioning events + network events&lt;/font&gt;&lt;div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;- if commissioning window opened : blink led for duration = 1000s&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;- if commissioning window closed : stop blinking led&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#dae8fc;strokeColor=#6c8ebf;size=14;align=left;spacingLeft=3;spacingRight=3;" vertex="1" parent="1">
+                    <mxGeometry x="540" y="2800" width="390" height="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="297" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;rounded=0;curved=1;fillColor=#dae8fc;strokeColor=#6c8ebf;entryX=0.002;entryY=0.254;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="296">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="332.78" y="2805.42" as="sourcePoint"/>
+                        <mxPoint x="540.22" y="2800.0000000000005" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="380" y="2830"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>

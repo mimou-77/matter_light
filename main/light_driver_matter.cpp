@@ -1,5 +1,8 @@
 
 #include "light_driver_matter.h"
+#include "hal_defs.h"
+
+#include <esp_log.h>
 
 #include <esp_matter.h>
 #include <esp_matter_attribute_utils.h>
@@ -95,7 +98,7 @@ extern "C" light_handle_t * create_light(node_t * light_node, uint8_t relay_pin,
 
 
 /**
- * @brief sends pin nbr to the queue ; push_btn_task receives elt from the queue
+ * @brief sends elt = event = pin,lvl,timestamp to the queue ; push_btn_task receives elt from the queue
  *
  */
 extern "C" void push_btn_isr(void *arg)
@@ -115,10 +118,7 @@ extern "C" void push_btn_isr(void *arg)
 
 
 /**
- * @brief flips the light's onoff attribute :
- *        attribute::update() triggers app_driver_attribute_update() (PRE_UPDATE) which drives the relay gpio
- *
- * @param light
+ * @brief flip the light's onoff attribute (attribute::update() then drives the relay gpio)
  */
 static void light_toggle_onoff(light_handle_t * light)
 {
@@ -135,111 +135,13 @@ static void light_toggle_onoff(light_handle_t * light)
 
 
 /**
- * @brief time-based checks of the ext cmd lines ; called ONLY when the event queue is drained
- *        (queue timeout in push_btn_task) : deciding from the pin level while edges are still
- *        queued (not yet folded into the line's state) would misclassify real actuations
+ * @brief handles the 2 local btns (press < 1s = toggle ; both held 10s = factory reset)
+ *        and the 2 ext cmd lines (1 press = 1 onoff toggle)
  *
- *        - ARMED : if the level moved away from idle with no edge event seen, open a pending
- *          actuation from this poll path (works even if the gpio interrupt never fires)
- *        - PENDING : if the line still reads non-idle after EXT_CMD_CONFIRM_MS the press is real
- *          => fire ; if it is back at idle with no 2nd edge it was a lone glitch => discard
- *        - SETTLING : once quiet for EXT_CMD_SETTLE_MS and back at idle => re-arm ; if it stays
- *          quiet at a NON-idle level EXT_CMD_IDLE_RESYNC_MS after the actuation, the recorded
- *          idle level is wrong (e.g. booted while the ext btn was held) => adopt the current
- *          level as the new idle and re-arm
+ *        btn debounce : an edge is accepted only if it changes the stable state of the btn
+ *        AND arrives at least DEBOUNCE_MS after the last accepted edge
  *
- * @param exts the 2 ext cmd contexts
- */
-static void ext_cmd_run_checks(ext_cmd_ctx_t ** exts)
-{
-    for (int i = 0; i < 2; i++)
-    {
-        // an edge arrived (possibly during a matter update stall of the previous line) : fold it
-        // first ; the checks will re-run at the next queue timeout
-        if (uxQueueMessagesWaiting(queue) > 0)
-        {
-            return;
-        }
-
-        // re-read per line : firing the previous line can stall ms-long in attribute::update
-        TickType_t now = xTaskGetTickCount();
-
-        ext_cmd_ctx_t * ext = exts[i];
-
-        if (ext->state == EXT_CMD_ARMED)
-        {
-            if (ext_cmd_get(ext->pin) != ext->idle_lvl)
-            {
-                // level moved away from idle but no edge event was seen (gpio interrupt missed
-                // or not firing) : poll-path detection ; goes through the same PENDING
-                // confirmation as an isr edge
-                ESP_LOGI("light_driver_matter", "ext cmd pin %u : level change detected by poll", ext->pin);
-                ext->state = EXT_CMD_PENDING;
-                ext->pending_since = now;
-                ext->last_event = now;
-            }
-        }
-        else if (ext->state == EXT_CMD_PENDING)
-        {
-            if ((TickType_t)(now - ext->pending_since) >= pdMS_TO_TICKS(EXT_CMD_CONFIRM_MS))
-            {
-                if (ext_cmd_get(ext->pin) != ext->idle_lvl)
-                {
-                    // still away from idle : a real press is being held => fire
-                    ext->state = EXT_CMD_SETTLING;
-                    ext->disarm_time = now;
-                    light_toggle_onoff(ext->light);
-                }
-                else
-                {
-                    // single edge and the line is already back at rest : lone glitch => discard
-                    ESP_LOGI("light_driver_matter", "ext cmd pin %u : lone edge discarded", ext->pin);
-                    ext->state = EXT_CMD_ARMED;
-                }
-            }
-        }
-        else if (ext->state == EXT_CMD_SETTLING)
-        {
-            TickType_t quiet = (TickType_t)(now - ext->last_event);
-
-            if (quiet >= pdMS_TO_TICKS(EXT_CMD_SETTLE_MS))
-            {
-                if (ext_cmd_get(ext->pin) == ext->idle_lvl)
-                {
-                    ext->state = EXT_CMD_ARMED;
-                    ESP_LOGI("light_driver_matter", "ext cmd pin %u : re-armed", ext->pin);
-                }
-                else if ((TickType_t)(now - ext->disarm_time) >= pdMS_TO_TICKS(EXT_CMD_IDLE_RESYNC_MS))
-                {
-                    ext->idle_lvl = ext_cmd_get(ext->pin);
-                    ext->state = EXT_CMD_ARMED;
-                    ESP_LOGI("light_driver_matter", "ext cmd pin %u : idle level resynced to %d, re-armed", ext->pin, (int)ext->idle_lvl);
-                }
-            }
-        }
-    }
-}
-
-
-
-/**
- * @brief handles btn_1 / btn_2 press (any press < 1s toggles the corresponding light's onoff attribute)
- *        and simultaneous press of both btns held 10s (factory reset)
- *
- *        also handles ext_cmd_1 / ext_cmd_2 (external push btns) : the external transistor toggles
- *        the relay directly in hw and pulses the ext_cmd pin ; one actuation = one flip of the
- *        onoff attribute so matter stays in sync (the relay gpio is re-driven to the same state).
- *        the per-line state machine (see ext_cmd_state_t and ext_cmd_run_checks) fires on a
- *        confirmed edge away from the idle level, then absorbs everything (bounce, release edges,
- *        relay-switching transients) until the line settles back to idle ; the level sampled in
- *        the isr is NOT trusted (a short pulse may be over before the isr reads the pin) : only
- *        edges + level re-sampling at check time are
- *
- *        debounce : an edge is ACCEPTED only if it changes the stable state of the btn AND arrives
- *        at least DEBOUNCE_MS after the last accepted edge ; bounce edges are thus dropped without
- *        corrupting the state machine (a bounce posedge used to abort the factory-reset timer)
- *
- * @param pvParameters light_ctx_t * : {btn_1, btn_2}
+ * @param pvParameters light_ctx_t *
  */
 extern "C" void push_btn_task(void *pvParameters)
 {
@@ -258,28 +160,12 @@ extern "C" void push_btn_task(void *pvParameters)
 
     bool both_pressed = false;
 
-    // ext cmd lines : sample the idle level of each line (the device boots with the external
-    // btns released, so the level right now IS the idle level, whatever the polarity)
-    for (int i = 0; i < 2; i++)
-    {
-        exts[i]->idle_lvl = ext_cmd_get(exts[i]->pin);
-        exts[i]->state = EXT_CMD_ARMED;
-        ESP_LOGI("light_driver_matter", "ext cmd pin %u armed (idle lvl=%d)", exts[i]->pin, (int)exts[i]->idle_lvl);
-    }
-
     btn_event_t event;
     while (1)
     {
-        // bounded wait : the periodic wakeup runs the ext checks, which also POLL the level of
-        // the armed ext lines, so an external press is detected even if its gpio interrupt
-        // never fires (the isr path just reacts faster when it works)
-        BaseType_t received = xQueueReceive(queue, &event, pdMS_TO_TICKS(EXT_CMD_POLL_MS));
-        TickType_t now = xTaskGetTickCount();
-
-        if (!received)
+        if (!xQueueReceive(queue, &event, portMAX_DELAY))
         {
-            ext_cmd_run_checks(exts);
-            continue; // queue timeout : only the time-based ext checks to run
+            continue;
         }
 
         // external command (ext_cmd_1 or ext_cmd_2) ?
@@ -294,36 +180,15 @@ extern "C" void push_btn_task(void *pvParameters)
         }
         if (ext != nullptr)
         {
-            // not logged while SETTLING : a held press on a 220Vac-driven stage produces a
-            // 50/100Hz pulse train, logging every absorbed edge would flood the uart and
-            // stall this task
-            if (ext->state != EXT_CMD_SETTLING)
+            // 1st edge after a quiet gap = a new press => toggle ; closer edges are the 50Hz
+            // pulse train / bounce of the same press => absorbed
+            if ((TickType_t)(event.timestamp - ext->last_event) >= pdMS_TO_TICKS(EXT_CMD_SETTLE_MS))
             {
-                ESP_LOGI("light_driver_matter", "ext cmd pin %u : edge lvl=%d (state=%d)",
-                         event.pin, event.level, (int)ext->state);
-            }
-
-            if (ext->state == EXT_CMD_ARMED)
-            {
-                // 1st edge away from idle : open a pending actuation ; NOT fired yet, so a lone
-                // emi glitch cannot toggle (confirmed by a 2nd edge or by the level check)
-                ext->state = EXT_CMD_PENDING;
-                ext->pending_since = now;
-            }
-            else if (ext->state == EXT_CMD_PENDING)
-            {
-                // 2nd edge of the actuation (bounce, or the end of a short pulse) : fire
-                ext->state = EXT_CMD_SETTLING;
-                ext->disarm_time = now;
+                ESP_LOGI("light_driver_matter", "ext cmd pin %u : press", event.pin);
                 light_toggle_onoff(ext->light);
             }
-            // EXT_CMD_SETTLING : edge absorbed (bounce / release / relay transients)
 
-            ext->last_event = now;
-
-            // no ext_cmd_run_checks() here : time-based decisions are only taken once the queue
-            // is drained (next timeout, <= EXT_CMD_POLL_MS away since this line is not armed) ;
-            // an unfolded edge still in the queue could otherwise be misclassified
+            ext->last_event = event.timestamp;
             continue;
         }
 
