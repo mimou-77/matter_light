@@ -2,7 +2,8 @@ build/
 managed_components/
 dependencies.lock
 sdkconfig
-/sdkconfig.old
+sdkconfig.old
+sdkconfig.c6*
 .pio/
 .espressif/
 *.bin

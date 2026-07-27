@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="HYK3kfEGzhCxfjowVZK_" name="Page-1">
-        <mxGraphModel dx="5930" dy="2540" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="1681" dy="462" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -726,10 +726,10 @@
                 <mxCell id="295" value="&amp;nbsp; &amp;nbsp; &amp;nbsp; functionning logic" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=14;flipH=1;fillColor=#e1d5e7;strokeColor=#9673a6;align=left;" parent="1" vertex="1">
                     <mxGeometry y="3080" width="1350" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="296" value="&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;- logs commissioning events + network events&lt;/font&gt;&lt;div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;- if commissioning window opened : blink led for duration = 1000s&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;- if commissioning window closed : stop blinking led&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#dae8fc;strokeColor=#6c8ebf;size=14;align=left;spacingLeft=3;spacingRight=3;" vertex="1" parent="1">
+                <mxCell id="296" value="&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;- logs commissioning events + network events&lt;/font&gt;&lt;div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;- if commissioning window opened : blink led for duration = 1000s&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;- if commissioning window closed : stop blinking led&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#dae8fc;strokeColor=#6c8ebf;size=14;align=left;spacingLeft=3;spacingRight=3;" parent="1" vertex="1">
                     <mxGeometry x="540" y="2800" width="390" height="65" as="geometry"/>
                 </mxCell>
-                <mxCell id="297" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;rounded=0;curved=1;fillColor=#dae8fc;strokeColor=#6c8ebf;entryX=0.002;entryY=0.254;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="296">
+                <mxCell id="297" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;rounded=0;curved=1;fillColor=#dae8fc;strokeColor=#6c8ebf;entryX=0.002;entryY=0.254;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="296" edge="1">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
                         <mxPoint x="332.78" y="2805.42" as="sourcePoint"/>
                         <mxPoint x="540.22" y="2800.0000000000005" as="targetPoint"/>
@@ -737,6 +737,42 @@
                             <mxPoint x="380" y="2830"/>
                         </Array>
                     </mxGeometry>
+                </mxCell>
+                <mxCell id="298" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;dashed=1;strokeColor=#9673a6;" vertex="1" parent="1">
+                    <mxGeometry y="3760" width="860" height="550" as="geometry"/>
+                </mxCell>
+                <mxCell id="299" value="choice between : build with wifi / build with thread" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=14;flipH=1;fillColor=#e1d5e7;strokeColor=#9673a6;align=left;spacingLeft=17;" vertex="1" parent="1">
+                    <mxGeometry x="10.75" y="3740" width="850" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="301" value="&lt;div style=&quot;color: rgb(212, 212, 212); background-color: rgb(30, 30, 30); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;idf.py -DSDKCONFIG_DEFAULTS=&quot;sdkconfig.defaults;sdkconfig.defaults.c6_wifi&quot; build&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="30" y="3820" width="642.5" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="302" value="&lt;div style=&quot;color: rgb(212, 212, 212); background-color: rgb(30, 30, 30); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;div style=&quot;color: rgb(212, 212, 212); line-height: 19px;&quot;&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;idf.py -DSDKCONFIG_DEFAULTS=&quot;sdkconfig.defaults;sdkconfig.defaults.c6_thread&quot; build&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="30" y="3930" width="662.5" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="303" value="the variable &lt;b&gt;DSDKCONFIG_DEFAULTS &lt;/b&gt;= a list of 2 filenames :&amp;nbsp;&lt;b&gt;sdkconfig.defaults&amp;nbsp;&lt;/b&gt;AND &lt;b&gt;sdkconfig.defaults.c6_wifi&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+                    <mxGeometry x="67.5" y="4040" width="662.5" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="304" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;build ---&amp;gt; CMake reads &lt;/span&gt;&lt;b style=&quot;background-color: transparent;&quot;&gt;CMakeLists.txt &lt;/b&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;:&amp;nbsp;SDKCONFIG_DEFAULTS &lt;/span&gt;&lt;b style=&quot;background-color: transparent;&quot;&gt;contains c6_wifi &lt;/b&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;=&amp;gt; CMake choses &lt;b&gt;sdkconfig.c6_wifi &lt;/b&gt;as sdkconfig.&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b style=&quot;background-color: transparent;&quot;&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b style=&quot;background-color: transparent;&quot;&gt;&amp;nbsp;&lt;/b&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;if&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; text-align: center;&quot;&gt;sdkconfig.c6_wifi doesnt exist : it is created from the files in&amp;nbsp;&lt;/span&gt;&lt;b style=&quot;background-color: transparent; text-align: center; color: rgb(63, 63, 63); scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251);&quot;&gt;DSDKCONFIG_DEFAULTS&amp;nbsp;&lt;/b&gt;&lt;span style=&quot;background-color: transparent; color: rgb(63, 63, 63); text-align: center;&quot;&gt;(&lt;/span&gt;&lt;u style=&quot;background-color: transparent; color: rgb(63, 63, 63); text-align: center;&quot;&gt;sdkconfig.deaults&lt;/u&gt;&lt;span style=&quot;background-color: transparent; color: rgb(63, 63, 63); text-align: center;&quot;&gt; AND &lt;/span&gt;&lt;u style=&quot;background-color: transparent; color: rgb(63, 63, 63); text-align: center;&quot;&gt;sdkconfig.defaults.c6_wifi&lt;/u&gt;&lt;span style=&quot;background-color: transparent; color: rgb(63, 63, 63); text-align: center;&quot;&gt;)&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;spacingLeft=17;" vertex="1" parent="1">
+                    <mxGeometry x="67.5" y="4110" width="662.5" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="305" value="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=13;" vertex="1" parent="1">
+                    <mxGeometry x="5" y="3790" width="40" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="306" value="2" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=10;" vertex="1" parent="1">
+                    <mxGeometry x="5.630000000000001" y="3900" width="40" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="307" value="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=13;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+                    <mxGeometry x="5.000000000000001" y="4050" width="40" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="309" style="edgeStyle=none;html=1;exitX=1.006;exitY=0.729;exitDx=0;exitDy=0;exitPerimeter=0;shape=flexArrow;strokeColor=#666666;startArrow=none;startFill=0;endWidth=10.37037037037037;endSize=2.8000000000000003;width=5.185185185185185;fillColor=#f5f5f5;" edge="1" parent="1" source="307">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="45.00000000000001" y="4080" as="sourcePoint"/>
+                        <mxPoint x="70" y="4079" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="311" value="&lt;div style=&quot;text-align: start;&quot;&gt;&lt;font face=&quot;monospace&quot;&gt;&lt;font style=&quot;background-color: light-dark(rgba(255, 255, 255, 0.1), rgb(18, 18, 18));&quot; color=&quot;rgba(0, 0, 0, 0)&quot;&gt;&lt;span style=&quot;font-size: 11.7px; white-space-collapse: preserve;&quot;&gt;build/config/&lt;/span&gt;&lt;/font&gt;&lt;span style=&quot;background-color: light-dark(rgba(255, 255, 255, 0.1), rgb(18, 18, 18)); color: light-dark(rgb(215, 186, 125), rgb(99, 74, 21)); font-size: 11.7px; white-space-collapse: preserve;&quot;&gt;&lt;b&gt;sdkconfig.h&lt;/b&gt;&lt;/span&gt;&lt;b style=&quot;background-color: light-dark(rgba(255, 255, 255, 0.1), rgb(18, 18, 18)); color: light-dark(rgb(215, 186, 125), rgb(99, 74, 21)); font-size: 11.7px; white-space-collapse: preserve;&quot;&gt; &lt;/b&gt;&lt;font style=&quot;background-color: light-dark(rgba(255, 255, 255, 0.1), rgb(18, 18, 18));&quot; color=&quot;rgba(0, 0, 0, 0)&quot;&gt;&lt;span style=&quot;font-size: 11.7px; white-space-collapse: preserve;&quot;&gt;is created and used as an include file. It contains the &lt;/span&gt;&lt;/font&gt;&lt;span style=&quot;background-color: light-dark(rgba(255, 255, 255, 0.1), rgb(18, 18, 18)); color: light-dark(rgb(215, 186, 125), rgb(99, 74, 21)); font-size: 11.7px; white-space-collapse: preserve;&quot;&gt;&lt;b&gt;defines&lt;/b&gt;&lt;/span&gt;&lt;b style=&quot;background-color: light-dark(rgba(255, 255, 255, 0.1), rgb(18, 18, 18)); color: light-dark(rgb(215, 186, 125), rgb(99, 74, 21)); font-size: 11.7px; white-space-collapse: preserve;&quot;&gt;.&lt;br&gt;&lt;/b&gt;&lt;span style=&quot;background-color: light-dark(rgba(255, 255, 255, 0.1), rgb(18, 18, 18)); font-size: 11.7px; white-space-collapse: preserve;&quot;&gt;the &lt;b&gt;#if CHIP_DEVICE_CONFIG_ENABLE_THREAD &lt;/b&gt;blocks in src files&lt;/span&gt;&lt;span style=&quot;color: light-dark(rgb(215, 186, 125), rgb(99, 74, 21)); font-size: 11.7px; white-space-collapse: preserve;&quot;&gt; &lt;span&gt;will be diabled.&lt;/span&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+                    <mxGeometry x="67.5" y="4220" width="662.5" height="60" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>

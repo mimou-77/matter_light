@@ -23,7 +23,16 @@ set(EXTRA_COMPONENT_DIRS
 
 
 
-
+# each transport variant uses its own generated sdkconfig file : SDKCONFIG_DEFAULTS is only
+# applied when the sdkconfig does not exist yet, so sharing one sdkconfig between variants
+# would silently keep the previous transport
+if(DEFINED SDKCONFIG_DEFAULTS)
+    if("${SDKCONFIG_DEFAULTS}" MATCHES "c6_wifi")
+        set(SDKCONFIG "${CMAKE_CURRENT_SOURCE_DIR}/sdkconfig.c6_wifi")
+    elseif("${SDKCONFIG_DEFAULTS}" MATCHES "c6_thread")
+        set(SDKCONFIG "${CMAKE_CURRENT_SOURCE_DIR}/sdkconfig.c6_thread")
+    endif()
+endif()
 
 include($ENV{IDF_PATH}/tools/cmake/project.cmake)
 
