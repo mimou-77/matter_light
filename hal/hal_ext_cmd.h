@@ -1,7 +1,5 @@
 
 #pragma once
-#ifndef __HAL_EXT_CMD_H__
-#define __HAL_EXT_CMD_H__
 
 
 #ifdef __cplusplus
@@ -42,6 +40,3 @@ void ext_cmd_init(uint8_t pin, ext_cmd_isr_t isr);
 #ifdef __cplusplus
 }
 #endif
-
-
-#endif // __HAL_EXT_CMD_H__

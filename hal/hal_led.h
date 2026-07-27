@@ -1,7 +1,5 @@
 
 #pragma once
-#ifndef __HAL_LED_H__
-#define __HAL_LED_H__
 
 
 #ifdef __cplusplus
@@ -55,6 +53,3 @@ void led_stop_blink(uint8_t pin);
 #ifdef __cplusplus
 }
 #endif
-
-
-#endif // __HAL_LED_H__

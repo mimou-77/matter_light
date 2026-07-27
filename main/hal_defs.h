@@ -1,7 +1,5 @@
 
 #pragma once
-#ifndef __HAL_DEFS_H__
-#define __HAL_DEFS_H__
 
 
 #define LED_PIN 9
@@ -41,6 +39,3 @@
 
 
 
-
-
-#endif // __HAL_DEFS_H__

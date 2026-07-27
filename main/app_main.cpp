@@ -23,8 +23,9 @@
 #include <app/server/CommissioningWindowManager.h>
 #include <app/server/Server.h>
 
-#include "app_logic_matter.h"
-#include "light_driver_matter.h"
+#include "matter_callbacks.h"
+#include "matter_light_endpoint.h"
+#include "button_task.h"
 
 #include "hal_led.h"
 
@@ -68,9 +69,11 @@ extern "C" void app_main()
     // light_x_handle contains relay_pin + push_btn_pin + ext_cmd_pin + endpoint_id
     light_handle_t * light_1_handle = create_light(node, (uint8_t)RELAY_1_PIN, (uint8_t)PUSH_BTN_1_PIN, (uint8_t)EXT_CMD_1_PIN);
     ABORT_APP_ON_FAILURE(light_1_handle != nullptr, ESP_LOGE(TAG, "Failed to create light 1"));
+    button_task_register_light_io((uint8_t)PUSH_BTN_1_PIN, (uint8_t)EXT_CMD_1_PIN);
 
     light_handle_t * light_2_handle = create_light(node, (uint8_t)RELAY_2_PIN, (uint8_t)PUSH_BTN_2_PIN, (uint8_t)EXT_CMD_2_PIN);
     ABORT_APP_ON_FAILURE(light_2_handle != nullptr, ESP_LOGE(TAG, "Failed to create light 2"));
+    button_task_register_light_io((uint8_t)PUSH_BTN_2_PIN, (uint8_t)EXT_CMD_2_PIN);
 
 
     // status led : blinks while advertising for commissioning (see app_event_cb)
@@ -98,10 +101,10 @@ extern "C" void app_main()
 
     /* push btn task : handle long press + short press + external commands => updates matter attributes of light endpoint*/
     static light_ctx_t light_ctx = {
-        .btn_1 = { .pin = PUSH_BTN_1_PIN, .light = light_1_handle, .press_time = 0 },
-        .btn_2 = { .pin = PUSH_BTN_2_PIN, .light = light_2_handle, .press_time = 0 },
-        .ext_1 = { .pin = EXT_CMD_1_PIN, .light = light_1_handle },
-        .ext_2 = { .pin = EXT_CMD_2_PIN, .light = light_2_handle },
+        .btns = { { .pin = PUSH_BTN_1_PIN, .light = light_1_handle, .press_time = 0 },
+                  { .pin = PUSH_BTN_2_PIN, .light = light_2_handle, .press_time = 0 } },
+        .exts = { { .pin = EXT_CMD_1_PIN, .light = light_1_handle },
+                  { .pin = EXT_CMD_2_PIN, .light = light_2_handle } },
     };
     xTaskCreate(push_btn_task, "push_btn_task", 4096, &light_ctx, 5, NULL);
 }

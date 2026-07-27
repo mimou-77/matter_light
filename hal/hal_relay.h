@@ -1,7 +1,5 @@
 
 #pragma once
-#ifndef __HAL_RELAY_H__
-#define __HAL_RELAY_H__
 
 
 #ifdef __cplusplus
@@ -44,6 +42,3 @@ void relay_init(uint8_t pin);
 #ifdef __cplusplus
 }
 #endif
-
-
-#endif // __HAL_RELAY_H__

@@ -1,18 +1,14 @@
 
+#include "matter_callbacks.h"
+#include "matter_light_endpoint.h"
+
 #include <esp_err.h>
 #include <esp_log.h>
-#include <nvs_flash.h>
 
 #include <esp_matter.h>
 #include <esp_matter_ota.h>
 
-// #include <platform/CHIPDeviceLayer.h>
-// #include <platform/CHIPDeviceEvent.h>
-
-#include "driver/gpio.h"
-
 #include <common_macros.h>
-
 
 #if CHIP_DEVICE_CONFIG_ENABLE_THREAD
 #include <platform/ESP32/OpenthreadLauncher.h>
@@ -21,9 +17,7 @@
 #include <app/server/CommissioningWindowManager.h>
 #include <app/server/Server.h>
 
-#include "app_logic_matter.h"
-#include "app_driver_matter.h"
-
+#include "hal_relay.h"
 #include "hal_led.h"
 #include "hal_defs.h"
 
@@ -33,21 +27,13 @@ using namespace esp_matter::endpoint;
 using namespace chip::app::Clusters;
 
 
-
 /*-----------------------------------------------------------------------------------------------*/
 /* global variables                                                                             */
 /*-----------------------------------------------------------------------------------------------*/
 
-static const char *TAG = "app_logic_matter";
+static const char *TAG = "matter_callbacks";
 
 constexpr auto k_timeout_seconds = 300; // advertisement ble lasts 5s then closes
-
-
-
-
-
-
-
 
 
 /*-----------------------------------------------------------------------------------------------*/
@@ -55,8 +41,8 @@ constexpr auto k_timeout_seconds = 300; // advertisement ble lasts 5s then close
 /*-----------------------------------------------------------------------------------------------*/
 
 /// @brief logs network events
-/// @param event 
-/// @param arg 
+/// @param event
+/// @param arg
 void app_event_cb(const chip::DeviceLayer::ChipDeviceEvent *event, intptr_t arg)
 {
     switch (event->Type) {
@@ -135,12 +121,12 @@ void app_event_cb(const chip::DeviceLayer::ChipDeviceEvent *event, intptr_t arg)
 
 
 /// @brief called when clients interact with the Identify Cluster
-/// @param type 
-/// @param endpoint_id 
-/// @param effect_id 
-/// @param effect_variant 
-/// @param priv_data 
-/// @return 
+/// @param type
+/// @param endpoint_id
+/// @param effect_id
+/// @param effect_variant
+/// @param priv_data
+/// @return
 esp_err_t app_identification_cb(identification::callback_type_t type, uint16_t endpoint_id, uint8_t effect_id,
                                 uint8_t effect_variant, void *priv_data)
 {
@@ -150,23 +136,50 @@ esp_err_t app_identification_cb(identification::callback_type_t type, uint16_t e
 
 
 
+/// @brief updates hw for driver_handle (currently always a light_handle_t *) :
+///        if cluster is OnOff and attribute is OnOff, drive that light's relay pin to the new value
+/// @param driver_handle light_handle_t * (endpoint_id + relay_pin + push_btn_pin + ext_cmd_pin)
+/// @param endpoint_id
+/// @param cluster_id
+/// @param attribute_id
+/// @param val
+/// @return
+static esp_err_t app_driver_attribute_update(void *driver_handle, uint16_t endpoint_id, uint32_t cluster_id,
+                                              uint32_t attribute_id, esp_matter_attr_val_t *val)
+{
+    esp_err_t err = ESP_OK;
+
+    if (cluster_id == OnOff::Id) // cluster onoff will be used to represent the light fns
+    {
+        if (attribute_id == OnOff::Attributes::OnOff::Id) // attr onoff
+        {
+            bool onoff_val = val->val.b;
+
+            light_handle_t * light_handle_ptr = (light_handle_t *)(driver_handle);
+            relay_set(light_handle_ptr->relay_pin, onoff_val);
+        }
+    }
+
+    return err;
+}
+
+
+
 /// @brief called when an attribute value changes ; updates hw accordingly
-/// @param type 
-/// @param endpoint_id 
-/// @param cluster_id 
-/// @param attribute_id 
-/// @param val 
-/// @param priv_data 
-/// @return 
+/// @param type
+/// @param endpoint_id
+/// @param cluster_id
+/// @param attribute_id
+/// @param val
+/// @param priv_data
+/// @return
 esp_err_t app_attribute_update_cb(attribute::callback_type_t type, uint16_t endpoint_id, uint32_t cluster_id,
                                   uint32_t attribute_id, esp_matter_attr_val_t *val, void *priv_data)
 {
     esp_err_t err = ESP_OK;
 
     if (type == PRE_UPDATE) {
-        /* Driver update */
-        app_driver_handle_t driver_handle = (app_driver_handle_t)priv_data;
-        err = app_driver_attribute_update(driver_handle, endpoint_id, cluster_id, attribute_id, val);
+        err = app_driver_attribute_update(priv_data, endpoint_id, cluster_id, attribute_id, val);
     }
 
     return err;

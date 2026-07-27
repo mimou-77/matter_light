@@ -1,9 +1,12 @@
 <mxfile host="65bd71144e">
     <diagram id="HYK3kfEGzhCxfjowVZK_" name="Page-1">
-        <mxGraphModel dx="1681" dy="462" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="1440" dy="563" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
+                <mxCell id="312" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f9f7ed;strokeColor=#36393d;" parent="1" vertex="1">
+                    <mxGeometry x="495" y="30" width="585" height="280" as="geometry"/>
+                </mxCell>
                 <mxCell id="190" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;dashed=1;strokeColor=#9673a6;" parent="1" vertex="1">
                     <mxGeometry y="2390" width="1080" height="670" as="geometry"/>
                 </mxCell>
@@ -40,16 +43,13 @@
                 <mxCell id="6" value="hal_ext_cmd" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
                     <mxGeometry x="360" y="190" width="90" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="7" value="light_driver_matter" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+                <mxCell id="7" value="matter_light_endpoint" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
                     <mxGeometry x="60" y="140" width="140" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="9" value="light_driver_matter" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
-                    <mxGeometry x="210" y="140" width="140" height="40" as="geometry"/>
-                </mxCell>
-                <mxCell id="10" value="app_driver_matter" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+                <mxCell id="10" value="matter_callbacks" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
                     <mxGeometry x="60" y="90" width="140" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="11" value="app_logic_matter" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+                <mxCell id="11" value="app_main" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
                     <mxGeometry x="60" y="40" width="140" height="40" as="geometry"/>
                 </mxCell>
                 <mxCell id="27" value="&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
@@ -738,41 +738,183 @@
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="298" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;dashed=1;strokeColor=#9673a6;" vertex="1" parent="1">
+                <mxCell id="298" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;dashed=1;strokeColor=#9673a6;" parent="1" vertex="1">
                     <mxGeometry y="3760" width="860" height="550" as="geometry"/>
                 </mxCell>
-                <mxCell id="299" value="choice between : build with wifi / build with thread" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=14;flipH=1;fillColor=#e1d5e7;strokeColor=#9673a6;align=left;spacingLeft=17;" vertex="1" parent="1">
+                <mxCell id="299" value="choice between : build with wifi / build with thread" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=14;flipH=1;fillColor=#e1d5e7;strokeColor=#9673a6;align=left;spacingLeft=17;" parent="1" vertex="1">
                     <mxGeometry x="10.75" y="3740" width="850" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="301" value="&lt;div style=&quot;color: rgb(212, 212, 212); background-color: rgb(30, 30, 30); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;idf.py -DSDKCONFIG_DEFAULTS=&quot;sdkconfig.defaults;sdkconfig.defaults.c6_wifi&quot; build&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="301" value="&lt;div style=&quot;color: rgb(212, 212, 212); background-color: rgb(30, 30, 30); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;idf.py -DSDKCONFIG_DEFAULTS=&quot;sdkconfig.defaults;sdkconfig.defaults.c6_wifi&quot; build&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="30" y="3820" width="642.5" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="302" value="&lt;div style=&quot;color: rgb(212, 212, 212); background-color: rgb(30, 30, 30); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;div style=&quot;color: rgb(212, 212, 212); line-height: 19px;&quot;&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;idf.py -DSDKCONFIG_DEFAULTS=&quot;sdkconfig.defaults;sdkconfig.defaults.c6_thread&quot; build&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="302" value="&lt;div style=&quot;color: rgb(212, 212, 212); background-color: rgb(30, 30, 30); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;div style=&quot;color: rgb(212, 212, 212); line-height: 19px;&quot;&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;idf.py -DSDKCONFIG_DEFAULTS=&quot;sdkconfig.defaults;sdkconfig.defaults.c6_thread&quot; build&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="30" y="3930" width="662.5" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="303" value="the variable &lt;b&gt;DSDKCONFIG_DEFAULTS &lt;/b&gt;= a list of 2 filenames :&amp;nbsp;&lt;b&gt;sdkconfig.defaults&amp;nbsp;&lt;/b&gt;AND &lt;b&gt;sdkconfig.defaults.c6_wifi&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+                <mxCell id="303" value="the variable &lt;b&gt;DSDKCONFIG_DEFAULTS &lt;/b&gt;= a list of 2 filenames :&amp;nbsp;&lt;b&gt;sdkconfig.defaults&amp;nbsp;&lt;/b&gt;AND &lt;b&gt;sdkconfig.defaults.c6_wifi&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
                     <mxGeometry x="67.5" y="4040" width="662.5" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="304" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;build ---&amp;gt; CMake reads &lt;/span&gt;&lt;b style=&quot;background-color: transparent;&quot;&gt;CMakeLists.txt &lt;/b&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;:&amp;nbsp;SDKCONFIG_DEFAULTS &lt;/span&gt;&lt;b style=&quot;background-color: transparent;&quot;&gt;contains c6_wifi &lt;/b&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;=&amp;gt; CMake choses &lt;b&gt;sdkconfig.c6_wifi &lt;/b&gt;as sdkconfig.&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b style=&quot;background-color: transparent;&quot;&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b style=&quot;background-color: transparent;&quot;&gt;&amp;nbsp;&lt;/b&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;if&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; text-align: center;&quot;&gt;sdkconfig.c6_wifi doesnt exist : it is created from the files in&amp;nbsp;&lt;/span&gt;&lt;b style=&quot;background-color: transparent; text-align: center; color: rgb(63, 63, 63); scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251);&quot;&gt;DSDKCONFIG_DEFAULTS&amp;nbsp;&lt;/b&gt;&lt;span style=&quot;background-color: transparent; color: rgb(63, 63, 63); text-align: center;&quot;&gt;(&lt;/span&gt;&lt;u style=&quot;background-color: transparent; color: rgb(63, 63, 63); text-align: center;&quot;&gt;sdkconfig.deaults&lt;/u&gt;&lt;span style=&quot;background-color: transparent; color: rgb(63, 63, 63); text-align: center;&quot;&gt; AND &lt;/span&gt;&lt;u style=&quot;background-color: transparent; color: rgb(63, 63, 63); text-align: center;&quot;&gt;sdkconfig.defaults.c6_wifi&lt;/u&gt;&lt;span style=&quot;background-color: transparent; color: rgb(63, 63, 63); text-align: center;&quot;&gt;)&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;spacingLeft=17;" vertex="1" parent="1">
+                <mxCell id="304" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;build ---&amp;gt; CMake reads &lt;/span&gt;&lt;b style=&quot;background-color: transparent;&quot;&gt;CMakeLists.txt &lt;/b&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;:&amp;nbsp;SDKCONFIG_DEFAULTS &lt;/span&gt;&lt;b style=&quot;background-color: transparent;&quot;&gt;contains c6_wifi &lt;/b&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;=&amp;gt; CMake choses &lt;b&gt;sdkconfig.c6_wifi &lt;/b&gt;as sdkconfig.&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b style=&quot;background-color: transparent;&quot;&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b style=&quot;background-color: transparent;&quot;&gt;&amp;nbsp;&lt;/b&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;if&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; text-align: center;&quot;&gt;sdkconfig.c6_wifi doesnt exist : it is created from the files in&amp;nbsp;&lt;/span&gt;&lt;b style=&quot;background-color: transparent; text-align: center; color: rgb(63, 63, 63); scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251);&quot;&gt;DSDKCONFIG_DEFAULTS&amp;nbsp;&lt;/b&gt;&lt;span style=&quot;background-color: transparent; color: rgb(63, 63, 63); text-align: center;&quot;&gt;(&lt;/span&gt;&lt;u style=&quot;background-color: transparent; color: rgb(63, 63, 63); text-align: center;&quot;&gt;sdkconfig.deaults&lt;/u&gt;&lt;span style=&quot;background-color: transparent; color: rgb(63, 63, 63); text-align: center;&quot;&gt; AND &lt;/span&gt;&lt;u style=&quot;background-color: transparent; color: rgb(63, 63, 63); text-align: center;&quot;&gt;sdkconfig.defaults.c6_wifi&lt;/u&gt;&lt;span style=&quot;background-color: transparent; color: rgb(63, 63, 63); text-align: center;&quot;&gt;)&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;spacingLeft=17;" parent="1" vertex="1">
                     <mxGeometry x="67.5" y="4110" width="662.5" height="100" as="geometry"/>
                 </mxCell>
-                <mxCell id="305" value="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=13;" vertex="1" parent="1">
+                <mxCell id="305" value="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=13;" parent="1" vertex="1">
                     <mxGeometry x="5" y="3790" width="40" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="306" value="2" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=10;" vertex="1" parent="1">
+                <mxCell id="306" value="2" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=10;" parent="1" vertex="1">
                     <mxGeometry x="5.630000000000001" y="3900" width="40" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="307" value="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=13;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+                <mxCell id="307" value="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=13;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
                     <mxGeometry x="5.000000000000001" y="4050" width="40" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="309" style="edgeStyle=none;html=1;exitX=1.006;exitY=0.729;exitDx=0;exitDy=0;exitPerimeter=0;shape=flexArrow;strokeColor=#666666;startArrow=none;startFill=0;endWidth=10.37037037037037;endSize=2.8000000000000003;width=5.185185185185185;fillColor=#f5f5f5;" edge="1" parent="1" source="307">
+                <mxCell id="309" style="edgeStyle=none;html=1;exitX=1.006;exitY=0.729;exitDx=0;exitDy=0;exitPerimeter=0;shape=flexArrow;strokeColor=#666666;startArrow=none;startFill=0;endWidth=10.37037037037037;endSize=2.8000000000000003;width=5.185185185185185;fillColor=#f5f5f5;" parent="1" source="307" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="45.00000000000001" y="4080" as="sourcePoint"/>
                         <mxPoint x="70" y="4079" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="311" value="&lt;div style=&quot;text-align: start;&quot;&gt;&lt;font face=&quot;monospace&quot;&gt;&lt;font style=&quot;background-color: light-dark(rgba(255, 255, 255, 0.1), rgb(18, 18, 18));&quot; color=&quot;rgba(0, 0, 0, 0)&quot;&gt;&lt;span style=&quot;font-size: 11.7px; white-space-collapse: preserve;&quot;&gt;build/config/&lt;/span&gt;&lt;/font&gt;&lt;span style=&quot;background-color: light-dark(rgba(255, 255, 255, 0.1), rgb(18, 18, 18)); color: light-dark(rgb(215, 186, 125), rgb(99, 74, 21)); font-size: 11.7px; white-space-collapse: preserve;&quot;&gt;&lt;b&gt;sdkconfig.h&lt;/b&gt;&lt;/span&gt;&lt;b style=&quot;background-color: light-dark(rgba(255, 255, 255, 0.1), rgb(18, 18, 18)); color: light-dark(rgb(215, 186, 125), rgb(99, 74, 21)); font-size: 11.7px; white-space-collapse: preserve;&quot;&gt; &lt;/b&gt;&lt;font style=&quot;background-color: light-dark(rgba(255, 255, 255, 0.1), rgb(18, 18, 18));&quot; color=&quot;rgba(0, 0, 0, 0)&quot;&gt;&lt;span style=&quot;font-size: 11.7px; white-space-collapse: preserve;&quot;&gt;is created and used as an include file. It contains the &lt;/span&gt;&lt;/font&gt;&lt;span style=&quot;background-color: light-dark(rgba(255, 255, 255, 0.1), rgb(18, 18, 18)); color: light-dark(rgb(215, 186, 125), rgb(99, 74, 21)); font-size: 11.7px; white-space-collapse: preserve;&quot;&gt;&lt;b&gt;defines&lt;/b&gt;&lt;/span&gt;&lt;b style=&quot;background-color: light-dark(rgba(255, 255, 255, 0.1), rgb(18, 18, 18)); color: light-dark(rgb(215, 186, 125), rgb(99, 74, 21)); font-size: 11.7px; white-space-collapse: preserve;&quot;&gt;.&lt;br&gt;&lt;/b&gt;&lt;span style=&quot;background-color: light-dark(rgba(255, 255, 255, 0.1), rgb(18, 18, 18)); font-size: 11.7px; white-space-collapse: preserve;&quot;&gt;the &lt;b&gt;#if CHIP_DEVICE_CONFIG_ENABLE_THREAD &lt;/b&gt;blocks in src files&lt;/span&gt;&lt;span style=&quot;color: light-dark(rgb(215, 186, 125), rgb(99, 74, 21)); font-size: 11.7px; white-space-collapse: preserve;&quot;&gt; &lt;span&gt;will be diabled.&lt;/span&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+                <mxCell id="311" value="&lt;div style=&quot;text-align: start;&quot;&gt;&lt;font face=&quot;monospace&quot;&gt;&lt;font style=&quot;background-color: light-dark(rgba(255, 255, 255, 0.1), rgb(18, 18, 18));&quot; color=&quot;rgba(0, 0, 0, 0)&quot;&gt;&lt;span style=&quot;font-size: 11.7px; white-space-collapse: preserve;&quot;&gt;build/config/&lt;/span&gt;&lt;/font&gt;&lt;span style=&quot;background-color: light-dark(rgba(255, 255, 255, 0.1), rgb(18, 18, 18)); color: light-dark(rgb(215, 186, 125), rgb(99, 74, 21)); font-size: 11.7px; white-space-collapse: preserve;&quot;&gt;&lt;b&gt;sdkconfig.h&lt;/b&gt;&lt;/span&gt;&lt;b style=&quot;background-color: light-dark(rgba(255, 255, 255, 0.1), rgb(18, 18, 18)); color: light-dark(rgb(215, 186, 125), rgb(99, 74, 21)); font-size: 11.7px; white-space-collapse: preserve;&quot;&gt; &lt;/b&gt;&lt;font style=&quot;background-color: light-dark(rgba(255, 255, 255, 0.1), rgb(18, 18, 18));&quot; color=&quot;rgba(0, 0, 0, 0)&quot;&gt;&lt;span style=&quot;font-size: 11.7px; white-space-collapse: preserve;&quot;&gt;is created and used as an include file. It contains the &lt;/span&gt;&lt;/font&gt;&lt;span style=&quot;background-color: light-dark(rgba(255, 255, 255, 0.1), rgb(18, 18, 18)); color: light-dark(rgb(215, 186, 125), rgb(99, 74, 21)); font-size: 11.7px; white-space-collapse: preserve;&quot;&gt;&lt;b&gt;defines&lt;/b&gt;&lt;/span&gt;&lt;b style=&quot;background-color: light-dark(rgba(255, 255, 255, 0.1), rgb(18, 18, 18)); color: light-dark(rgb(215, 186, 125), rgb(99, 74, 21)); font-size: 11.7px; white-space-collapse: preserve;&quot;&gt;.&lt;br&gt;&lt;/b&gt;&lt;span style=&quot;background-color: light-dark(rgba(255, 255, 255, 0.1), rgb(18, 18, 18)); font-size: 11.7px; white-space-collapse: preserve;&quot;&gt;the &lt;b&gt;#if CHIP_DEVICE_CONFIG_ENABLE_THREAD &lt;/b&gt;blocks in src files&lt;/span&gt;&lt;span style=&quot;color: light-dark(rgb(215, 186, 125), rgb(99, 74, 21)); font-size: 11.7px; white-space-collapse: preserve;&quot;&gt; &lt;span&gt;will be diabled.&lt;/span&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
                     <mxGeometry x="67.5" y="4220" width="662.5" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="313" value="&amp;nbsp; &amp;nbsp; &amp;nbsp; files" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=14;flipH=1;fillColor=#f9f7ed;strokeColor=#36393d;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="495" width="585" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="316" value="hal" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="515.1899999999999" y="46.06" width="43.024355153632726" height="18.823529411764707" as="geometry"/>
+                </mxCell>
+                <mxCell id="320" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=1;curved=0;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startSize=6;endSize=6;endArrow=none;endFill=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="316" target="321" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="318" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=1;curved=0;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startSize=6;endSize=6;endArrow=none;endFill=0;" parent="1" source="316" target="317" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="317" value="hal_ext_cmd" style="whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#36393d;" parent="1" vertex="1">
+                    <mxGeometry x="573.3499999999999" y="60.18000000000001" width="91.46" height="18.82" as="geometry"/>
+                </mxCell>
+                <mxCell id="319" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;hal_led&lt;/span&gt;" style="whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#36393d;" parent="1" vertex="1">
+                    <mxGeometry x="573.3499999999999" y="83.71000000000001" width="91.46" height="18.82" as="geometry"/>
+                </mxCell>
+                <mxCell id="321" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;hal_push_btn&lt;/span&gt;" style="whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#36393d;" parent="1" vertex="1">
+                    <mxGeometry x="573.3499999999999" y="107.24000000000001" width="91.46" height="18.82" as="geometry"/>
+                </mxCell>
+                <mxCell id="324" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=1;curved=0;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startSize=6;endSize=6;endArrow=none;endFill=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="316" target="319" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="555.1411869283731" y="79.00117647058823" as="sourcePoint"/>
+                        <mxPoint x="570.5070280546706" y="88.4129411764706" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="326" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;hal_relay&lt;/span&gt;" style="whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#36393d;" parent="1" vertex="1">
+                    <mxGeometry x="573.3499999999999" y="131.18" width="91.46" height="18.82" as="geometry"/>
+                </mxCell>
+                <mxCell id="327" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=1;curved=0;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startSize=6;endSize=6;endArrow=none;endFill=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="316" target="326" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="557.81" y="102.53" as="sourcePoint"/>
+                        <mxPoint x="570.5070280546706" y="135.88294117647058" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="328" value="main" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="517.6899999999999" y="166.06" width="43.024355153632726" height="18.823529411764707" as="geometry"/>
+                </mxCell>
+                <mxCell id="329" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=1;curved=0;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startSize=6;endSize=6;endArrow=none;endFill=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="328" target="333" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="330" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=1;curved=0;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startSize=6;endSize=6;endArrow=none;endFill=0;" parent="1" source="328" target="331" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="347" style="edgeStyle=none;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;rounded=0;curved=1;entryX=0.117;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;fontColor=#FF3399;labelBorderColor=#FF3399;strokeColor=#FF3399;" parent="1" source="331" target="346" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="690" y="130"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="331" value="app" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="575.8499999999999" y="180.18" width="91.46" height="18.82" as="geometry"/>
+                </mxCell>
+                <mxCell id="332" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;matter&lt;/span&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="575.8499999999999" y="203.71" width="91.46" height="18.82" as="geometry"/>
+                </mxCell>
+                <mxCell id="333" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;app_main&lt;/span&gt;" style="whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#36393d;" parent="1" vertex="1">
+                    <mxGeometry x="575.8499999999999" y="227.24" width="91.46" height="18.82" as="geometry"/>
+                </mxCell>
+                <mxCell id="334" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=1;curved=0;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startSize=6;endSize=6;endArrow=none;endFill=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="328" target="332" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="557.6411869283731" y="199.00117647058823" as="sourcePoint"/>
+                        <mxPoint x="573.0070280546706" y="208.4129411764706" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="335" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;hal_defs&lt;/span&gt;" style="whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#36393d;" parent="1" vertex="1">
+                    <mxGeometry x="575.8499999999999" y="251.18" width="91.46" height="18.82" as="geometry"/>
+                </mxCell>
+                <mxCell id="336" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=1;curved=0;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startSize=6;endSize=6;endArrow=none;endFill=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="328" target="335" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="560.31" y="222.53" as="sourcePoint"/>
+                        <mxPoint x="573.0070280546706" y="255.88294117647058" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="337" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=1;curved=0;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startSize=6;endSize=6;endArrow=none;endFill=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="331" target="338" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="674.81" y="188.71" as="sourcePoint"/>
+                        <mxPoint x="689.81" y="203.71" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="338" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;button_task (btns+ext_btns)&lt;/span&gt;" style="whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#36393d;" parent="1" vertex="1">
+                    <mxGeometry x="684.08" y="186.06" width="165.92" height="18.82" as="geometry"/>
+                </mxCell>
+                <mxCell id="339" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=1;curved=0;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startSize=6;endSize=6;endArrow=none;endFill=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="332" target="340" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="664.81" y="222.53" as="sourcePoint"/>
+                        <mxPoint x="687.81" y="236.18" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="340" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;matter_logic_callbacks&lt;/span&gt;" style="whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#36393d;" parent="1" vertex="1">
+                    <mxGeometry x="684.81" y="222.53" width="150" height="18.82" as="geometry"/>
+                </mxCell>
+                <mxCell id="341" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=1;curved=0;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startSize=6;endSize=6;endArrow=none;endFill=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="332" target="342" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="666.81" y="241.53" as="sourcePoint"/>
+                        <mxPoint x="687.81" y="264.65000000000003" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="342" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;matter_light_endpoint&lt;/span&gt;" style="whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#36393d;" parent="1" vertex="1">
+                    <mxGeometry x="684.81" y="246.06" width="150" height="18.82" as="geometry"/>
+                </mxCell>
+                <mxCell id="343" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;CMakeLists&lt;/span&gt;" style="whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#36393d;" parent="1" vertex="1">
+                    <mxGeometry x="575.7499999999999" y="275.12" width="91.46" height="18.82" as="geometry"/>
+                </mxCell>
+                <mxCell id="344" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=1;curved=0;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startSize=6;endSize=6;endArrow=none;endFill=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="328" target="343" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="560.7099999999999" y="199" as="sourcePoint"/>
+                        <mxPoint x="572.9070280546706" y="279.8229411764706" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="346" value="parallel tasks" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#FF3399;" parent="1" vertex="1">
+                    <mxGeometry x="755" y="110" width="90" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="348" value="- create light endpoint + light_handle&amp;nbsp;&lt;div&gt;&lt;font style=&quot;color: rgb(255, 51, 153);&quot;&gt;- set attribute val of light_handle&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#FF3399;" parent="1" vertex="1">
+                    <mxGeometry x="860" y="253.94" width="220" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="349" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;rounded=0;curved=1;fontColor=#FF3399;labelBorderColor=#FF3399;strokeColor=#FF3399;" parent="1" source="342" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="834.81" y="264.88" as="sourcePoint"/>
+                        <mxPoint x="942.6536869538554" y="260.11000000000007" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="880" y="230"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="350" value="- init btns (pins,queue)&lt;div&gt;&lt;font style=&quot;color: rgb(255, 51, 153);&quot;&gt;- btns task fn&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(255, 51, 153);&quot;&gt;- btn_isr&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#FF3399;" parent="1" vertex="1">
+                    <mxGeometry x="900" y="160" width="140" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="351" style="edgeStyle=none;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;rounded=0;curved=1;fontColor=#FF3399;labelBorderColor=#FF3399;strokeColor=#FF3399;entryX=0.005;entryY=0.244;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="338" target="350" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="785" y="193.89" as="sourcePoint"/>
+                        <mxPoint x="892.6536869538554" y="199.00000000000006" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="850" y="169"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="353" value="btns_task" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+                    <mxGeometry x="213.83" y="40" width="140" height="40" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
