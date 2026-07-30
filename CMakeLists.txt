@@ -48,3 +48,7 @@ idf_build_set_property(C_COMPILE_OPTIONS "-Os" APPEND)
 # flags that depend on -Wformat
 idf_build_set_property(COMPILE_OPTIONS "-Wno-format-nonliteral;-Wno-format-security" APPEND)
 
+
+# put the file mfg.bin in the partition 'fctry'; contains certifs (DAC, pairing id, ...)
+# the file mfg.bin is generated with ~/
+spiffs_create_partition_image(fctry ../out_somef_matter_light/mfg.bin FLASH_IN_PROJECT)
