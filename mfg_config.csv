@@ -1,0 +1,13 @@
+key,value
+# device-type and serial-num also name the output folder:
+#   out_mfg_bin_somef_<device-type>_<serial-num>
+device-type,light
+serial-num,01
+vendor-id,0xFFF2
+product-id,0x8001
+vendor-name,SOMEF
+product-name,Matter Light
+hw-ver,1
+hw-ver-str,v1.0
+discriminator,3840
+pin-code,20202021

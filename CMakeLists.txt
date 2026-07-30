@@ -50,5 +50,22 @@ idf_build_set_property(COMPILE_OPTIONS "-Wno-format-nonliteral;-Wno-format-secur
 
 
 # put the file mfg.bin in the partition 'fctry'; contains certifs (DAC, pairing id, ...)
-# the file mfg.bin is generated with ~/
-spiffs_create_partition_image(fctry ../out_somef_matter_light/mfg.bin FLASH_IN_PROJECT)
+# the file mfg.bin is generated with `python3 generate_mfg_bin.py`, which reads
+# mfg_config.csv and names its output folder after the device type and serial
+file(STRINGS "${CMAKE_CURRENT_SOURCE_DIR}/mfg_config.csv" MFG_CONFIG_LINES)
+foreach(line ${MFG_CONFIG_LINES})
+    if(line MATCHES "^(device-type|serial-num),[ \t]*([^,]+)")
+        set(key "${CMAKE_MATCH_1}")  # string(REGEX ...) below overwrites CMAKE_MATCH_*
+        # same slug rule as generate_mfg_bin.py: lowercase, non-alphanumerics to '_'
+        string(TOLOWER "${CMAKE_MATCH_2}" slug)
+        string(REGEX REPLACE "[^a-z0-9]+" "_" slug "${slug}")
+        string(REGEX REPLACE "^_+|_+$" "" slug "${slug}")
+        if(key STREQUAL "device-type")
+            set(MFG_DEVICE_TYPE "${slug}")
+        else()
+            set(MFG_SERIAL_NUM "${slug}")
+        endif()
+    endif()
+endforeach()
+set(MFG_BIN_DIR "${CMAKE_CURRENT_SOURCE_DIR}/out_mfg_bin_somef_${MFG_DEVICE_TYPE}_${MFG_SERIAL_NUM}")
+spiffs_create_partition_image(fctry ${MFG_BIN_DIR}/mfg.bin FLASH_IN_PROJECT)

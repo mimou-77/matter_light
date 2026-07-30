@@ -1,5 +1,23 @@
 
 
+> [!Note] Before building : 
+> - set the properties of this device (vid, pid, serial, commissioning descriminator, qrcode, ...) inside `mfg_config.csv`
+> - generate the mfg.bin file (during the build, it will be put inside the fctry partition)  :
+> ``` 
+> python3 generate_mfg_bin.py
+> ``` 
+> => a file = out_mfg_bin_x_y_z/mfg.bin will be genrated (with x = vendor name, y = product name, z = device serial)
+
+
+
+<br>
+
+---
+
+<br>
+
+
+
 > [!Note] How to build :
 > `For wifi` : 
 > ``` 
